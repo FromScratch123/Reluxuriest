@@ -8,10 +8,10 @@
   content="大阪城公園で営業しているエステティックサロンです。最高品質の施術で、美を追求するすべての人にその人本来の美しさに磨きをかけます。">
   <meta rel="canonical" href="">
   <title>Reluxuriest | 美しさは、芸術だ。</title>
-  <!-- CSS -->
+<!-- CSS -->
   <link rel="stylesheet" href="css/sanitize.css"> <!-- Reset CSS -->
   <link rel="stylesheet" href="css/styles.css"> <!-- Main CSS-->
-  <!-- CARD -->
+<!-- CARD -->
   <meta property="og:url" content="">
   <meta property="og:title" content="Reluxuriest | 美しさは、芸術だ。">
   <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
   <meta property="og:site_name" content="Reluxuriest | 美しさは、芸術だ。">
   <meta property="og:locale" content="ja_JP">
   <meta property="fb:app_id" content="">
-  <!-- Fonts & Icons -->
+<!-- Fonts & Icons -->
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
   <link rel="icon" href="favicon.png" sizes="48x48" type="image/png">
@@ -33,7 +33,7 @@
   <!-- windows icon-->
   <link  rel="apple-touch-icon-precomposed" href="img/icons/smart_phone_icon.png"> 
   <!-- smartphone icon-->
-  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Oswald&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> <!-- Material Icons-->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> <!--FontAwesome -->
@@ -41,51 +41,278 @@
 </head>
 <body>
   <header class="header">
-  <!-- hero header-->
+<!-- hero header-->
     <div class="hero">
-      <div class="logo">
+<!-- logo -->
+      <div class="hero__logo logo">
         <a href="" class="logo__a--hover">
           <img class="logo__img" src="img/logo.png" alt="ロゴ画像">
         </a>
       </div>
       <h1 class="hero__title"></h1>
       <div class="scroll-down">
-        <i></i>
-        <p class="scroll-down__text"></p>
+        <i class="fas fa-angle-double-down scroll_down__i"></i>
+        <p class="scroll-down__text">SCROLL</p>
       </div>
-      <div class="rsv-container">
-        <div class="rsv-by-phone">
+<!-- reservation button-->
+      <div class="rsv-flex-container">
+        <button class="rsv-by-phone">
           <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
-            <i></i>
-            <p class="rsv-by-phone__text rsv-by-phone__text--hover"></p>
+            <i class="material-icons rsv-by-phone__i">
+              phone_iphone
+              </i>
+            <p class="rsv-by-phone__text">TEL予約</p>
           </a>
-        </div>
-        <div class="rsv-by-line">
+        </button>
+        <button class="rsv-by-line">
           <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
-            <i></i>
-            <p class="rsv-by-line__text rsv-by-line__text--hover"></p>
+            <i class="fab fa-line rsv-by-line__i"></i>
+            <p class="rsv-by-line__text">LINE予約</p>
           </a>
-        </div>
+        </button>
       </div>
     </div>
-  <!-- global nav -->
-    <nav class="global-nav">
-      <ul class="global-nav__menu">
-        <li class="global-nav__list"><a href="#concept" class="global-nav__a global-nav__a--hover">CONCEPT</a></li>
-        <li class="global-nav__list"><a href="#news" class="global-nav__a global-nav__a--hover">NEWS</a></li>
-        <li class="global-nav__list"><a href="/html/menu.html" class="global-nav__a global-nav__a--hover">MENU</a></li>
-        <li class="global-nav__list"><a href="#reviews" class="global-nav__a global-nav__a--hover">REVIEWS</a></li>
-        <li class="global-nav__list"><a href="#access" class="global-nav__a global-nav__a--hover">ACCESS</a></li>
-        <li class="global-nav__list"><a href="/html/faq.html" class="global-nav__a global-nav__a--hover">FAQ</a></li>
-        <li class="global-nav__list"><a href="#contact" class="global-nav__a global-nav__a--hover">CONTACT</a></li>
-      </ul>
-    </nav>
+<!-- global nav -->
+    <div class="fixed-header">
+      <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.png" alt="ロゴ画像" class="logo__img"></a></div>
+      <nav class="global-nav">
+        <ul class="global-nav-flex-container">
+          <li class="global-nav__list"><a href="#concept" class="global-nav__a global-nav__a--hover">CONCEPT</a></li>
+          <li class="global-nav__list"><a href="#news" class="global-nav__a global-nav__a--hover">NEWS</a></li>
+          <li class="global-nav__list"><a href="/html/menu.html" class="global-nav__a global-nav__a--hover">MENU</a></li>
+          <li class="global-nav__list"><a href="#reviews" class="global-nav__a global-nav__a--hover">REVIEWS</a></li>
+          <li class="global-nav__list"><a href="#access" class="global-nav__a global-nav__a--hover">ACCESS</a></li>
+          <li class="global-nav__list"><a href="/html/faq.html" class="global-nav__a global-nav__a--hover">FAQ</a></li>
+          <li class="global-nav__list"><a href="#contact" class="global-nav__a global-nav__a--hover">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-  <!-- concept -->
-
+<!-- concept -->
+    <section class="concept">
+      <h1 class="concept__title">CONCEPT</h1>
+      <div class="desc-box">
+        <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
+        <p class="desc-box__text">私たちは、圧倒的技術力により、
+          美を追求するすべての人へ
+          最高の美を提供します。</p>
+        <p class="desc-box__text">あなたを表現する全てに美しさを。
+          心揺さぶる最高体験。</p>
+        <p class="desc-box__text">美しさは、芸術だ。</p>
+        <p class="desc-box__text desc-box__text--small">代表 山口 みつき</p>
+      </div>
+      <div class="concept__img-wrap">
+        <img src="./img/concept/concept__main.jpg" alt="" class="concept__img">
+      </div>
+    </section>
+      <div class="sns">
+        <ul class="sns-flex-container--fixed">
+          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i></a></li>
+          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i></a></li>
+          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+<!-- news -->
+    <section class="news">
+      <h1 class="news__title">NEWS</h1>
+      <div class="news-flex-container">
+        <div class="info-box">
+          <a href="" class="info-box__a info-box__a--hover">
+            <div class="info-box__img-wrap">
+              <img src="./img/news/news__valentine’s-day-fare.jpg" alt="" class="info-box__img">
+            </div>
+            <h1 class="info-box__title"><time>2020-02-01</time></h1><span class="info-box__label">INFOMATION</span>  
+            <p class="info-box__text">Valentine’s Day Fare</p>  
+          </a>
+        </div> 
+        <div class="info-box">
+          <a href="" class="info-box__a info-box__a--hover">
+            <div class="info-box__img-wrap">
+              <img src="./img/news/news__revised-price.jpg" alt="" class="info-box__img">
+            </div>
+            <h1 class="info-box__title"><time>2020-01-01</time></h1><span class="info-box__label">IMPORTANT</span>  
+            <p class="info-box__text">料金改定のお知らせ</p>  
+          </a>
+        </div> 
+        <div class="info-box">
+          <a href="" class="info-box__a info-box__a--hover">
+            <div class="info-box__img-wrap">
+              <img src="./img/news/news__magazine-beauty12.jpg" alt="" class="info-box__img">
+            </div>
+            <h1 class="info-box__title"><time>2019-11-23</time></h1><span class="info-box__label">INFOMATION</span>  
+            <p class="info-box__text">雑誌 Beauty12月号に掲載されました</p>  
+          </a>
+        </div> 
+      </div>
+    </section>
+<!-- reviews -->
+    <section class="reviews">
+      <h1 class="reviews__title">REVIEWS</h1>
+      <div class="reviews-container">
+        <div class="reviews__img-wrap">
+          <img src="./img/reviews/reviews__main.jpg" alt="" class="reviews__img">
+        </div>
+        <div class="review-box review-box--01">
+          <h1 class="review-box__title">主人からのプレゼント</h1>
+          <div class="review-box__triangle"></div>
+          <p class="review-box__text">結婚20年のプレゼントで主人から
+            エステをプレゼントして貰いました。
+            
+            担当して頂いた方は、
+            丁寧に施術内容を説明してくださり、
+            初めてでしたが、とても安心できました。
+            施術中はアロマの香りと落ち着いた音楽が流れ、
+            終始リラックスすることが出来ました。
+            
+            日頃の疲れを癒され、
+            綺麗になってとても嬉しい気持ちでした。
+            
+            主人と施術してくれた方に感謝です。
+            ありがとうございました。
+            
+            </p>
+          <p class="review-box__text review-box__text--small">40代 女性</p>
+        </div>
+        <div class="review-box review-box--02">
+          <h1 class="review-box__title">スキンケアについて教えて貰いました</h1>
+          <div class="review-box__triangle"></div>
+          <p class="review-box__text">月に2回通っています。
+            こちらのお店はスキンチェックを毎回するので、
+            その時に合った適切なスキンケア方法を詳しく
+            教えてくれます。
+            施術中だけでなく、普段のケアまで気にしてくれるので、
+            いつも助かっています。</p>
+          <p class="review-box__text review-box__text--small">60代 女性</p>
+        </div>
+        <div class="review-box review-box--03">
+          <h1 class="review-box__title">最近、綺麗になったねと言われるようになりました。</h1>
+          <div class="review-box__triangle"></div>
+          <p class="review-box__text">2ヶ月程通わせて頂いています。
+            以前から肌の調子が悪く悩んでおりましたが、
+            こちらで施術をして頂いてからは肌の潤いが保たれ、
+            肌の調子がとても良いです。
+            友人からも「最近綺麗になったね。」と褒められました。</p>
+          <p class="review-box__text review-box__text--small">30代 女性</p>
+        </div>
+        <div class="review-box review-box--04">
+          <h1 class="review-box__title">最高に贅沢な時間を過ごせました</h1>
+          <div class="review-box__triangle"></div>
+          <p class="review-box__text">友人の紹介で初めて利用させていただきました。
+            お店の中はとても清潔で、落ち着いた雰囲気でした。
+            
+            何種類かあるコースから選べるのですが、
+            今回は紹介割引を利用させて頂けたので、最高級コースを選びました。
+            今まで受けてきたエステの中で一番気持ちよく、結果にも満足しています。
+            
+            また、お店オリジナルの化粧水、保湿液などが販売されており、
+            試しに購入させていただきましたが、肌の調子が凄く良いです。
+            
+            また、利用させていただきたいです。
+            
+            </p>
+          <p class="review-box__text review-box__text--small">50代 女性</p>
+        </div>
+      </div>
+    </section>
+<!-- access -->
+    <section class="access">
+      <h1 class="access__title">ACCESS</h1>
+      <div class="access-container">
+        <div class="map-wrap">
+          <div class="access__bg-map"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6561.467518181746!2d135.52305812506853!3d34.686668421752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0c977655555%3A0x67f69eaef984d98b!2z5aSn6Ziq5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1581691244181!5m2!1sja!2sjp" width="750" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="info">
+          <div class="info-logo logo">
+            <img src="./img/logo--white.png" alt="" class="logo__img">
+          </div>
+          <div class="sns">
+            <ul class="sns-flex-container">
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i></a></li>
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i></a></li>
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="info__address-wrap">
+            <p class="info__address-zip"></p>
+            <p class="info__address"></p>
+          </div>
+          <table class="business-time">
+            <thead>
+              <tr>
+                <td class="business-time__business-hour" rowspan="2">営業時間<br>
+                  10:00 ~ 19:00
+                </td>
+                <th class="business-time__days">月</th>
+                <th class="business-time__days">火</th>
+                <th class="business-time__days">水</th>
+                <th class="business-time__days">木</th>
+                <th class="business-time__days">金</th>
+                <th class="business-time__days">土</th>
+                <th class="business-time__days">日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="business-time__days--open"></span></td>
+                <td><span class="business-time__days--open"></span></td>
+                <td><span class="business-time__days--open"></span></td>
+                <td><span class="business-time__days--open"></span></td>
+                <td><span class="business-time__days--closed"></span></td>
+                <td><span class="business-time__days--open"></span></td>
+                <td><span class="business-time__days--open"></span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="business-time__td--small">※ 盆 年末年始 祝日休み</td>
+              </tr>
+            </tfoot>
+          </table>
+          <p class="info__tel-note">完全予約制</p>
+          <p class="info__tel--large">00-0123-4567</p>
+        </div>
+      </div>
+    </section>
+<!-- contact -->    
+    <section class="contact">
+      <div class="contact-box">
+        <form action="" method="post" class="contact-form">
+          <label for="name" class="contact-form__name">名前:
+            <input type="text" name="name" id="name" placeholder="姓" class="contact-form__input contact-form__name--familyname">
+            <input type="text" name="name" id="name" placeholder="名" class="contact-form__input contact-form__name--givenname">
+          </label>
+          <label for="mail" class="contact-form__mail">メールアドレス:
+            <input type="text" name="mail" id="mail" placeholder="sample@example.com" class="contact-form__input">
+          </label>
+          <label for="re-mail">メールアドレス（確認用）:
+            <input type="text" name="re-mail" id="re-mail" placeholder="sample@example.com" class="contact-form__input">
+          </label>
+          <label for="title" class="contact-form__title">お問い合わせ項目:
+            <select name="title" id="title" class="contact-form__select">
+              <option value="title" selected>項目を選んでください</option>
+              <option value="title">予約について</option>
+              <option value="title">キャンセルについて</option>
+              <option value="title">当サロンについて</option>
+              <option value="title">施術について</option>
+              <option value="title">メニューについて</option>
+              <option value="title">アクセスについて</option>
+              <option value="title">その他</option>
+            </select>
+          </label>
+          <label for="content" class="contact-form__content">内容:
+            <textarea name="content"  id="content" cols="80" rows="20" class="contact-form__textarea"></textarea>
+          </label>
+          <input type="checkbox" name="agree" class="contact-form__checkbox" id="agree"><label for="agree">個人情報の取扱いに同意する</label>
+          <input type="submit" value="送信" class="contact-form__submit">
+        </form>
+      </div>
+    </section>
   </main>
-
+  <footer class="footer">
+    
+  </footer>
 </body>
 <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
