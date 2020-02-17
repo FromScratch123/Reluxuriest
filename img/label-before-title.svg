@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.5" height="28" viewBox="0 0 11.5 28">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #8a4da5;
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="グループ_132" data-name="グループ 132" transform="translate(-878 -1209.5)">
+    <path id="パス_26" data-name="パス 26" class="cls-1" d="M0,0V28" transform="translate(880.5 1209.5)"/>
+    <path id="パス_11" data-name="パス 11" class="cls-2" d="M0,0V27.823" transform="translate(888.5 1209.677)"/>
+  </g>
+</svg>

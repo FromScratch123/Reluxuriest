@@ -9,7 +9,7 @@
   <meta rel="canonical" href="">
   <title>Reluxuriest | 美しさは、芸術だ。</title>
 <!-- CSS -->
-  <link rel="stylesheet" href="css/sanitize.css"> <!-- Reset CSS -->
+<link href="https://unpkg.com/sanitize.css" rel="stylesheet"/> <!-- Reset CSS -->
   <link rel="stylesheet" href="css/styles.css"> <!-- Main CSS-->
 <!-- CARD -->
   <meta property="og:url" content="">
@@ -24,10 +24,10 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="fb:app_id" content="">
 <!-- Fonts & Icons -->
-  <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="favicon.png" sizes="48x48" type="image/png">
-  <link rel="icon" href="favicon.png" sizes="62x62" type="image/png"> 
+  <link rel="icon" href="favicon.ico" sizes="16x16" type="image/mage/vnd.microsoft.icon">
+  <link rel="icon" href="favicon.ico" sizes="32x32" type="image/mage/vnd.microsoft.icon">
+  <link rel="icon" href="favicon.ico" sizes="48x48" type="image/mage/vnd.microsoft.icon">
+  <link rel="icon" href="favicon.pico sizes="62x62" type="image/mage/vnd.microsoft.icon"> 
   <meta name="msapplication-TileImage" content="img/icons/windows_icon.png"> 
   <meta name="msapplication-TileColor" content="#8A4DA5">
   <!-- windows icon-->
@@ -37,46 +37,49 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> <!-- Material Icons-->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> <!--FontAwesome -->
-
+<!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
   <header class="header">
 <!-- hero header-->
     <div class="hero">
-<!-- logo -->
       <div class="hero__logo logo">
         <a href="" class="logo__a--hover">
-          <img class="logo__img" src="img/logo.png" alt="ロゴ画像">
+          <img class="logo__img" src="img/logo.svg" alt="ロゴ画像">
         </a>
       </div>
-      <h1 class="hero__title"></h1>
+      <h1 class="hero__title">美しさは、芸術だ。</h1>
+<!-- scroll down -->      
       <div class="scroll-down">
-        <i class="fas fa-angle-double-down scroll_down__i"></i>
-        <p class="scroll-down__text">SCROLL</p>
+        <a href="#concept" class="scroll-down__a scroll-down__a--hover">
+          <i class="fas fa-angle-double-down scroll-down__i"></i>
+          <p class="scroll-down__text">SCROLL</p>
+        </a>
       </div>
-<!-- reservation button-->
-      <div class="rsv-flex-container">
-        <button class="rsv-by-phone">
-          <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
-            <i class="material-icons rsv-by-phone__i">
-              phone_iphone
-              </i>
-            <p class="rsv-by-phone__text">TEL予約</p>
-          </a>
-        </button>
-        <button class="rsv-by-line">
-          <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
-            <i class="fab fa-line rsv-by-line__i"></i>
-            <p class="rsv-by-line__text">LINE予約</p>
-          </a>
-        </button>
+<!-- reservation button -->
+      <div class="flex-container hero-rsv-flex-container">
+        <a href="" class="rsv-by-phone">
+          <button class="rsv-by-phone__square-button rsv-by-phone__square-button--hover">
+              <i class="fas fa-mobile-alt rsv-by-phone__i"></i>
+              <p class="rsv-by-phone__text">TEL予約</p>
+          </button>
+        </a>
+        <a href="" class="rsv-by-line">
+          <button class="rsv-by-line__square-button rsv-by-line__square-button--hover">
+              <i class="fab fa-line rsv-by-line__i"></i>
+              <p class="rsv-by-line__text">LINE予約</p>
+          </button>
+        </a>
       </div>
     </div>
+  </div>
 <!-- global nav -->
-    <div class="fixed-header">
-      <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.png" alt="ロゴ画像" class="logo__img"></a></div>
+    <div id="global-nav" class="global-nav-header">
+      <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.svg" alt="ロゴ画像" class="logo__img"></a></div>
       <nav class="global-nav">
-        <ul class="global-nav-flex-container">
+        <ul class="flex-container global-nav-flex-container">
           <li class="global-nav__list"><a href="#concept" class="global-nav__a global-nav__a--hover">CONCEPT</a></li>
           <li class="global-nav__list"><a href="#news" class="global-nav__a global-nav__a--hover">NEWS</a></li>
           <li class="global-nav__list"><a href="/html/menu.html" class="global-nav__a global-nav__a--hover">MENU</a></li>
@@ -90,33 +93,36 @@
   </header>
   <main>
 <!-- concept -->
-    <section class="concept">
-      <h1 class="concept__title">CONCEPT</h1>
-      <div class="desc-box">
-        <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
-        <p class="desc-box__text">私たちは、圧倒的技術力により、
-          美を追求するすべての人へ
-          最高の美を提供します。</p>
-        <p class="desc-box__text">あなたを表現する全てに美しさを。
-          心揺さぶる最高体験。</p>
-        <p class="desc-box__text">美しさは、芸術だ。</p>
-        <p class="desc-box__text desc-box__text--small">代表 山口 みつき</p>
+    <section id="concept" class="concept">
+      <h1 class="concept__title section-title">CONCEPT</h1>
+      <div class="content-wrap">
+        <div class="desc-box">
+          <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
+          <p class="desc-box__text">私たちは、圧倒的技術力により、<br>
+            美を追求するすべての人へ<br>
+            最高の美を提供します。</p>
+          <p class="desc-box__text">あなたを表現する全てに美しさを。<br>
+            心揺さぶる最高体験。</p>
+          <p class="desc-box__text">美しさは、芸術だ。</p>
+          <p class="desc-box__text desc-box__text--small">代表 山口 みつき</p>
+        </div>
+        <div class="concept__img-wrap">
+          <img src="./img/concept/concept__main.jpg" alt="" class="concept__img">
+        </div>
       </div>
-      <div class="concept__img-wrap">
-        <img src="./img/concept/concept__main.jpg" alt="" class="concept__img">
-      </div>
-    </section>
-      <div class="sns">
-        <ul class="sns-flex-container--fixed">
-          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i></a></li>
-          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i></a></li>
-          <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i></a></li>
+<!--fixed SNS button-->    
+      <div id="sns-button" class="sns-button">
+        <ul class="flex-container sns-flex-container--fixed">
+          <li class="sns__list"><a href="" class="sns__a sns__facebook--hover"><i class="fab fa-facebook sns__i"></i></a></li>
+          <li class="sns__list"><a href="" class="sns__a sns__twitter--hover"><i class="fab fa-twitter sns__i"></i></a></li>
+          <li class="sns__list"><a href="" class="sns__a sns__instagram--hover"><i class="fab fa-instagram sns__i"></i></a></li>
         </ul>
       </div>
+    </section>
 <!-- news -->
-    <section class="news">
-      <h1 class="news__title">NEWS</h1>
-      <div class="news-flex-container">
+    <section id="news" class="news">
+      <h1 class="news__title section-title">NEWS</h1>
+      <div class="flex-container news-flex-container">
         <div class="info-box">
           <a href="" class="info-box__a info-box__a--hover">
             <div class="info-box__img-wrap">
@@ -136,19 +142,19 @@
           </a>
         </div> 
         <div class="info-box">
-          <a href="" class="info-box__a info-box__a--hover">
+
             <div class="info-box__img-wrap">
-              <img src="./img/news/news__magazine-beauty12.jpg" alt="" class="info-box__img">
+              <a href="" class="info-box__a info-box__a--hover"><img src="./img/news/news__magazine-beauty12.jpg" alt="" class="info-box__img"></a>
             </div>
-            <h1 class="info-box__title"><time>2019-11-23</time></h1><span class="info-box__label">INFOMATION</span>  
-            <p class="info-box__text">雑誌 Beauty12月号に掲載されました</p>  
-          </a>
+            <time class="info-box__time">2019-11-23</time>
+            <span class="info-box__label">INFOMATION</span>  
+            <a href="" class="info-box__a info-box__a--hover"><h1 class="info-box__title">雑誌 Beauty12月号に掲載されました</h1></a>
         </div> 
       </div>
     </section>
 <!-- reviews -->
-    <section class="reviews">
-      <h1 class="reviews__title">REVIEWS</h1>
+    <section id="reviews" class="reviews">
+      <h1 class="reviews__title section-title">REVIEWS</h1>
       <div class="reviews-container">
         <div class="reviews__img-wrap">
           <img src="./img/reviews/reviews__main.jpg" alt="" class="reviews__img">
@@ -216,8 +222,8 @@
       </div>
     </section>
 <!-- access -->
-    <section class="access">
-      <h1 class="access__title">ACCESS</h1>
+    <section id="access" class="access">
+      <h1 class="access__title section-title">ACCESS</h1>
       <div class="access-container">
         <div class="map-wrap">
           <div class="access__bg-map"></div>
@@ -225,10 +231,10 @@
         </div>
         <div class="info">
           <div class="info-logo logo">
-            <img src="./img/logo--white.png" alt="" class="logo__img">
+            <img src="./img/logo--white.svg" alt="" class="logo__img">
           </div>
           <div class="sns">
-            <ul class="sns-flex-container">
+            <ul class="flex-container sns-flex-container">
               <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i></a></li>
               <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i></a></li>
               <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i></a></li>
@@ -276,7 +282,8 @@
       </div>
     </section>
 <!-- contact -->    
-    <section class="contact">
+    <section id="contact" class="contact">
+      <h1 class="contact__titile section-title">CONTACT</h1>
       <div class="contact-box">
         <form action="" method="post" class="contact-form">
           <label for="name" class="contact-form__name">名前:
@@ -310,8 +317,81 @@
       </div>
     </section>
   </main>
+<!-- footer -->
   <footer class="footer">
-    
+    <div class="footer-content-wrap">
+<!-- site map -->
+      <div class="footer-box footer-box--01">
+        <h1 class="footer-box__title">Site Map</h1>
+        <div class="footer-menu">
+          <ul class="flex-container footer-menu-flex-container">
+            <li class="footer-menu__list"><a href="#concept" class="footer-menu__a footer-menu__a--hover">CONCEPT</a></li>
+            <li class="footer-menu__list"><a href="#news" class="footer-menu__a footer-menu__a--hover">NEWS</a></li>
+            <li class="footer-menu__list"><a href="./html/menu.html" class="footer-menu__a footer-menu__a-hover">MENU</a></li>
+            <li class="footer-menu__list"><a href="#reviews" class="footer-menu__a footer-menu__a--footer">REVIEWS</a></li>
+            <li class="footer-menu__list"><a href="#access" class="footer-menu__a footer-menu__a--hover">ACCESS</a></li>
+            <li class="footer-menu__list"><a href="./html/faq.html" class="footer-menu__a footer-menu__a--hover">FAQ</a></li>
+            <li class="footer-menu__list"><a href="#contact" class="footer-menu__a footer-menu__a--hover">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+<!-- social media -->      
+      <div class="footer-box footer-box--02">
+        <h1 class="footer-box__title">Social Media</h1>
+        <div class="sns">
+          <ul class="flex-container sns-flex-container--with-name">
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i><span class="sns__name">Facebook</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i><span class="sns__name">Twitter</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i><span class="sns__name">Instagram</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line"></i><span class="sns__name">LINE</span></a></li>
+          </ul>
+        </div>
+      </div>
+<!-- reservation button -->      
+      <div class="footer-box footer-box--03">
+        <div class="flex-container footer-box-03-flex-container">
+          <div class="footer__logo logo">
+            <a href="" class="logo__a--hover">
+              <img class="logo__img" src="img/logo.png" alt="ロゴ画像">
+            </a>
+          </div>
+          <div class="flex-container footer-rsv-flex-container">
+            <button class="rsv-by-phone--rectangle">
+              <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
+                <i class="material-icons rsv-by-phone__i">
+                  phone_iphone
+                  </i>
+                <span class="rsv-by-phone__text">TEL予約</span>
+              </a>
+            </button>
+            <button class="rsv-by-line--rectangle">
+              <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
+                <i class="fab fa-line rsv-by-line__i"></i>
+                <span class="rsv-by-line__text">LINE予約</span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- company -->
+      <div class="footer-box footer-box--04">
+        <h1 class="footer-box__title">Company</h1>
+        <p class="footer-box__p">Reluxuriest 株式会社</p>
+        <p class="footer-box__p--small">〒 540-0002</p>
+        <p class="footer-box__p">大阪府大阪市中央区大阪城１−１</p>
+        <p class="footer-box__p--large">00-0123-4567</p>
+        <p class="footer-box__p--small">受付10:00 ~ 19:00 定休日木曜・祝祭日</p>
+      </div>
+    </div>
+    <p class="footer__copyright">CopyRight 2020 Reluxuriest Co.,Ltd. All Rights Reserved.</p>
+    <div class="footer-bottom-link">
+      <ul class="flex-container link-flex-container">
+        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">店舗情報</a></li>
+        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">個人情報保護方針</a></li>
+        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">特定商取引法に基づく表記</a></li>
+        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">お問い合わせ</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 <script
