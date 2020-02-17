@@ -1,9 +1,12 @@
 $(function() {
 
+    
+
   //global-navの位置固定
 
   let globalNavOffset = $('#global-nav').offset();
   $(window).scroll(function () {
+
       if ($(window).scrollTop() > globalNavOffset.top) {
           $('#global-nav').addClass('fixed-header');
       } else {
@@ -19,6 +22,8 @@ $(function() {
           $('#sns-button').removeClass('sns-button--fixed');
       }
   });
+
+  
 
   //スムーススクロール
   $('a[href^="#"]').click(function() {

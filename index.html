@@ -98,14 +98,16 @@
       <div class="content-wrap">
         <div class="desc-box">
           <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
-          <p class="desc-box__text">私たちは、圧倒的技術力により、<br>
-            美を追求するすべての人へ<br>
-            最高の美を提供します。</p>
-          <p class="desc-box__text">あなたを表現する全てに美しさを。<br>
-            心揺さぶる最高体験。</p>
-          <p class="desc-box__text">美しさは、芸術だ。</p>
-          <p class="desc-box__text desc-box__text--small">代表 山口 みつき</p>
-        </div>
+          <div class="desc-box__text-wrap">
+            <p class="desc-box__text">私たちは、圧倒的技術力により、<br>
+              美を追求するすべての人へ<br>
+              最高の美を提供します。</p>
+            <p class="desc-box__text">あなたを表現する全てに美しさを。<br>
+              心揺さぶる最高体験。</p>
+            <p class="desc-box__text">美しさは、芸術だ。</p>
+            <p class="desc-box__text desc-box__text--small">代表 山口 みつき</p>
+          </div>
+          </div>
         <div class="concept__img-wrap">
           <img src="./img/concept/concept__main.jpg" alt="" class="concept__img">
         </div>
@@ -113,9 +115,12 @@
 <!--fixed SNS button-->    
       <div id="sns-button" class="sns-button">
         <ul class="flex-container sns-flex-container--fixed">
-          <li class="sns__list"><a href="" class="sns__a sns__facebook--hover"><i class="fab fa-facebook sns__i"></i></a></li>
-          <li class="sns__list"><a href="" class="sns__a sns__twitter--hover"><i class="fab fa-twitter sns__i"></i></a></li>
-          <li class="sns__list"><a href="" class="sns__a sns__instagram--hover"><i class="fab fa-instagram sns__i"></i></a></li>
+          <!-- facebook -->
+          <li class="sns__list"><a href="" class="sns__a"><i id="facebook" class="fab fa-facebook sns__i sns__i--column sns__facebook--hover"></i></a></li>
+          <!-- twitter -->
+          <li class="sns__list"><a href="" class="sns__a"><i id="twitter" class="fab fa-twitter sns__i sns__i sns__i--column sns__twitter--hover"></i></a></li>
+          <!-- instagram -->
+          <li class="sns__list"><a href="" class="sns__a"><i id="instagram" class="fab fa-instagram sns__i sns__i sns__i--column sns__instagram--hover"></i></a></li>
         </ul>
       </div>
     </section>
@@ -123,46 +128,57 @@
     <section id="news" class="news">
       <h1 class="news__title section-title">NEWS</h1>
       <div class="flex-container news-flex-container">
+        <!-- box-1 -->
         <div class="info-box">
-          <a href="" class="info-box__a info-box__a--hover">
+            <!-- image -->
             <div class="info-box__img-wrap">
-              <img src="./img/news/news__valentine’s-day-fare.jpg" alt="" class="info-box__img">
+              <a href="" class="info-box__a"><img src="./img/news/news__valentine’s-day-fare.jpg" alt="" class="info-box__img info-box__img--hover">
+              </a>
             </div>
-            <h1 class="info-box__title"><time>2020-02-01</time></h1><span class="info-box__label">INFOMATION</span>  
-            <p class="info-box__text">Valentine’s Day Fare</p>  
+            <!-- text -->
+            <p class="info-box__time"><time>2020-02-01</time></p><span class="info-box__label info-box__label--blue">INFOMATION</span>  
+            <a href="" class="info-box__a"><h1 class="info-box__title info-box__title--hover">Valentine’s Day Fare</h1>  
           </a>
         </div> 
+        <!-- box2 -->
         <div class="info-box">
-          <a href="" class="info-box__a info-box__a--hover">
+            <!-- image -->
             <div class="info-box__img-wrap">
-              <img src="./img/news/news__revised-price.jpg" alt="" class="info-box__img">
+              <a href="" class="info-box__a"><img src="./img/news/news__revised-price.jpg" alt="" class="info-box__img info-box__img--hover">
+              </a>
             </div>
-            <h1 class="info-box__title"><time>2020-01-01</time></h1><span class="info-box__label">IMPORTANT</span>  
-            <p class="info-box__text">料金改定のお知らせ</p>  
+            <!-- text -->
+            <p class="info-box__time"><time>2020-01-01</time></p><span class="info-box__label info-box__label--red">IMPORTANT</span>  
+            <a href="" class="info-box__a"><h1 class="info-box__title info-box__title--hover">料金改定のお知らせ</h1>  
           </a>
         </div> 
+        <!-- box-3 -->
         <div class="info-box">
-
+            <!-- image -->
             <div class="info-box__img-wrap">
-              <a href="" class="info-box__a info-box__a--hover"><img src="./img/news/news__magazine-beauty12.jpg" alt="" class="info-box__img"></a>
+              <a href="" class="info-box__a"><img src="./img/news/news__magazine-beauty12.jpg" alt="" class="info-box__img info-box__img--hover">
+              </a>
             </div>
-            <time class="info-box__time">2019-11-23</time>
-            <span class="info-box__label">INFOMATION</span>  
-            <a href="" class="info-box__a info-box__a--hover"><h1 class="info-box__title">雑誌 Beauty12月号に掲載されました</h1></a>
+            <!-- text -->
+            <p class="info-box__time"><time>2019-11-23</time></p><span class="info-box__label info-box__label--blue">INFOMATION</span>  
+            <a href="" class="info-box__a">
+              <h1 class="info-box__title info-box__title--hover">雑誌 Beauty12月号に掲載さ...</h1>
+            </a>
         </div> 
       </div>
     </section>
 <!-- reviews -->
     <section id="reviews" class="reviews">
       <h1 class="reviews__title section-title">REVIEWS</h1>
-      <div class="reviews-container">
+      <div class="flex-container reviews-flex-container">
+        <!-- image -->
         <div class="reviews__img-wrap">
           <img src="./img/reviews/reviews__main.jpg" alt="" class="reviews__img">
         </div>
-        <div class="review-box review-box--01">
+        <!-- box-1 -->
+        <div class="review-box review-box-01">
           <h1 class="review-box__title">主人からのプレゼント</h1>
-          <div class="review-box__triangle"></div>
-          <p class="review-box__text">結婚20年のプレゼントで主人から
+          <p class="review-box__text review-box__text-first">結婚20年のプレゼントで主人から
             エステをプレゼントして貰いました。
             
             担当して頂いた方は、
@@ -180,10 +196,23 @@
             </p>
           <p class="review-box__text review-box__text--small">40代 女性</p>
         </div>
-        <div class="review-box review-box--02">
+        <!-- box-2 -->
+        <div class="review-box review-box-02">
+          <h1 class="review-box__title">最近、綺麗になったねと言われるようになりました。</h1>
+          <div class="review-box__triangle"></div>
+          <p class="review-box__text review-box__text-first">2ヶ月程通わせて頂いています。
+            以前から肌の調子が悪く悩んでおりましたが、
+            こちらで施術をして頂いてからは肌の潤いが保たれ、
+            肌の調子がとても良いです。
+            友人からも「最近綺麗になったね。」と褒められました。</p>
+          <p class="review-box__text review-box__text--small">30代 女性</p>
+        </div>
+        
+        <!--box-3 -->
+        <div class="review-box review-box-03">
           <h1 class="review-box__title">スキンケアについて教えて貰いました</h1>
           <div class="review-box__triangle"></div>
-          <p class="review-box__text">月に2回通っています。
+          <p class="review-box__text review-box__text-first">月に2回通っています。
             こちらのお店はスキンチェックを毎回するので、
             その時に合った適切なスキンケア方法を詳しく
             教えてくれます。
@@ -191,20 +220,11 @@
             いつも助かっています。</p>
           <p class="review-box__text review-box__text--small">60代 女性</p>
         </div>
-        <div class="review-box review-box--03">
-          <h1 class="review-box__title">最近、綺麗になったねと言われるようになりました。</h1>
-          <div class="review-box__triangle"></div>
-          <p class="review-box__text">2ヶ月程通わせて頂いています。
-            以前から肌の調子が悪く悩んでおりましたが、
-            こちらで施術をして頂いてからは肌の潤いが保たれ、
-            肌の調子がとても良いです。
-            友人からも「最近綺麗になったね。」と褒められました。</p>
-          <p class="review-box__text review-box__text--small">30代 女性</p>
-        </div>
-        <div class="review-box review-box--04">
+        <!--box-4 -->
+        <div class="review-box review-box-04">
           <h1 class="review-box__title">最高に贅沢な時間を過ごせました</h1>
           <div class="review-box__triangle"></div>
-          <p class="review-box__text">友人の紹介で初めて利用させていただきました。
+          <p class="review-box__text review-box__text-first">友人の紹介で初めて利用させていただきました。
             お店の中はとても清潔で、落ち着いた雰囲気でした。
             
             何種類かあるコースから選べるのですが、
@@ -224,20 +244,27 @@
 <!-- access -->
     <section id="access" class="access">
       <h1 class="access__title section-title">ACCESS</h1>
-      <div class="access-container">
+      <div class="flex-container access-flex-container">
+        <!-- map -->
         <div class="map-wrap">
           <div class="access__bg-map"></div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6561.467518181746!2d135.52305812506853!3d34.686668421752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0c977655555%3A0x67f69eaef984d98b!2z5aSn6Ziq5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1581691244181!5m2!1sja!2sjp" width="750" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6561.467518181746!2d135.52305812506853!3d34.686668421752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0c977655555%3A0x67f69eaef984d98b!2z5aSn6Ziq5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1581691244181!5m2!1sja!2sjp" width="100%" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
+        <!-- info -->
         <div class="info">
+          <!-- logo -->
           <div class="info-logo logo">
-            <img src="./img/logo--white.svg" alt="" class="logo__img">
+            <img src="./img/access/logo--white.svg" alt="" class="logo__img">
           </div>
+          <!-- sns -->
           <div class="sns">
             <ul class="flex-container sns-flex-container">
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i></a></li>
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i></a></li>
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i></a></li>
+              <!-- facebook -->
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i sns__i--row"></i></a></li>
+              <!-- twitter -->
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i sns__i--row"></i></a></li>
+              <!-- instagram -->
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i sns__i--row"></i></a></li>
             </ul>
           </div>
           <div class="info__address-wrap">
@@ -340,10 +367,10 @@
         <h1 class="footer-box__title">Social Media</h1>
         <div class="sns">
           <ul class="flex-container sns-flex-container--with-name">
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook"></i><span class="sns__name">Facebook</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter"></i><span class="sns__name">Twitter</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram"></i><span class="sns__name">Instagram</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line"></i><span class="sns__name">LINE</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i"></i><span class="sns__name">Facebook</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i"></i><span class="sns__name">Twitter</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i"></i><span class="sns__name">Instagram</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line sns__i"></i><span class="sns__name">LINE</span></a></li>
           </ul>
         </div>
       </div>
