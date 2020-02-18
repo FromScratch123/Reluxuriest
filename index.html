@@ -76,19 +76,35 @@
     </div>
   </div>
 <!-- global nav -->
-    <div id="global-nav" class="global-nav-header">
-      <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.svg" alt="ロゴ画像" class="logo__img"></a></div>
-      <nav class="global-nav">
-        <ul class="flex-container global-nav-flex-container">
-          <li class="global-nav__list"><a href="#concept" class="global-nav__a global-nav__a--hover">CONCEPT</a></li>
-          <li class="global-nav__list"><a href="#news" class="global-nav__a global-nav__a--hover">NEWS</a></li>
-          <li class="global-nav__list"><a href="/html/menu.html" class="global-nav__a global-nav__a--hover">MENU</a></li>
-          <li class="global-nav__list"><a href="#reviews" class="global-nav__a global-nav__a--hover">REVIEWS</a></li>
-          <li class="global-nav__list"><a href="#access" class="global-nav__a global-nav__a--hover">ACCESS</a></li>
-          <li class="global-nav__list"><a href="/html/faq.html" class="global-nav__a global-nav__a--hover">FAQ</a></li>
-          <li class="global-nav__list"><a href="#contact" class="global-nav__a global-nav__a--hover">CONTACT</a></li>
-        </ul>
-      </nav>
+    <div class="global-nav-area">
+      <div id="global-nav" class="global-nav-header">
+        <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.svg" alt="ロゴ画像" class="logo__img"></a></div>
+        <nav class="global-nav">
+          <ul class="flex-container global-nav-flex-container">
+            <a href="#concept" class="global-nav__a global-nav__list--hover">
+              <li class="global-nav__list global-nav__list--hover">CONCEPT</li>
+            </a>
+            <a href="#news" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">NEWS</li>
+            </a>
+            <a href="/html/menu.html" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">MENU</li>
+            </a>
+            <a href="#reviews" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">REVIEWS</li>
+            </a>
+            <a href="#access" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">ACCESS</li>
+            </a>
+            <a href="/html/faq.html" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">FAQ</li>
+            </a>
+            <a href="#contact" class="global-nav__a">
+              <li class="global-nav__list global-nav__list--hover">CONTACT</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -99,7 +115,7 @@
         <div class="desc-box">
           <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
           <div class="desc-box__text-wrap">
-            <p class="desc-box__text">私たちは、圧倒的技術力により、<br>
+            <p class="desc-box__text">私たちは、圧倒的な技術力により、<br>
               美を追求するすべての人へ<br>
               最高の美を提供します。</p>
             <p class="desc-box__text">あなたを表現する全てに美しさを。<br>
@@ -246,9 +262,11 @@
       <h1 class="access__title section-title">ACCESS</h1>
       <div class="flex-container access-flex-container">
         <!-- map -->
-        <div class="map-wrap">
-          <div class="access__bg-map"></div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6561.467518181746!2d135.52305812506853!3d34.686668421752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0c977655555%3A0x67f69eaef984d98b!2z5aSn6Ziq5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1581691244181!5m2!1sja!2sjp" width="100%" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="map-background">
+          <div class="map-wrap">
+            <div class="access__bg-map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6561.467518181746!2d135.52305812506853!3d34.686668421752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0c977655555%3A0x67f69eaef984d98b!2z5aSn6Ziq5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1581691244181!5m2!1sja!2sjp" width="100%" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
         </div>
         <!-- info -->
         <div class="info">
@@ -260,21 +278,27 @@
           <div class="sns">
             <ul class="flex-container sns-flex-container">
               <!-- facebook -->
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i sns__i--row"></i></a></li>
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i sns__i--row sns__i--white sns__facebook--hover"></i></a></li>
               <!-- twitter -->
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i sns__i--row"></i></a></li>
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i sns__i--row sns__i--white sns__twitter--hover"></i></a></li>
               <!-- instagram -->
-              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i sns__i--row"></i></a></li>
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i sns__i--row sns__i--white sns__instagram--hover"></i></a></li>
+              <!-- LINE -->
+              <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line sns__i sns__i--row sns__i--white sns__line--hover"></i></a></li>
             </ul>
           </div>
+          <!-- address -->
           <div class="info__address-wrap">
-            <p class="info__address-zip"></p>
-            <p class="info__address"></p>
+            <p class="info__address-zip">〒 540-0002</p>
+            <p class="info__address">大阪府大阪市中央区大阪城１−１</p>
+            <p class="info__parking">駐車場完備 3台</p>
           </div>
-          <table class="business-time">
-            <thead>
+          <!-- business table -->
+          <table class="business-time-table">
+            <tbody>
+              <!--1行目 -->
               <tr>
-                <td class="business-time__business-hour" rowspan="2">営業時間<br>
+                <td rowspan="2" class="business-time-table__business-hour">営業時間<br>
                   10:00 ~ 19:00
                 </td>
                 <th class="business-time__days">月</th>
@@ -285,46 +309,57 @@
                 <th class="business-time__days">土</th>
                 <th class="business-time__days">日</th>
               </tr>
-            </thead>
-            <tbody>
+              <!-- 2行目 -->
               <tr>
-                <td><span class="business-time__days--open"></span></td>
-                <td><span class="business-time__days--open"></span></td>
-                <td><span class="business-time__days--open"></span></td>
-                <td><span class="business-time__days--open"></span></td>
-                <td><span class="business-time__days--closed"></span></td>
-                <td><span class="business-time__days--open"></span></td>
-                <td><span class="business-time__days--open"></span></td>
+                <!-- MON -->
+                <td><span class="business-time__days--open mon">●</td>
+                <!-- TUE -->
+                <td><span class="business-time__days--open tue">●</td>
+                <!-- WED -->
+                <td><span class="business-time__days--open wed">●</td>
+                <!-- THU -->
+                <td><span class="business-time__days--closed thu">×</span></td>
+                <!-- FRI -->
+                <td><span class="business-time__days--open fri">●</td>
+                <!-- SAT -->
+                <td><span class="business-time__days--open sat">●</td>
+                <!-- SUN -->
+                <td><span class="business-time__days--open sun">●</td>
+              </tr>
+              <!-- 3行目 -->
+              <tr>
+                <td colspan="8" class="business-time__td--small">※ 盆 年末年始 祝日休み</td>
               </tr>
             </tbody>
-            <tfoot>
-              <tr>
-                <td class="business-time__td--small">※ 盆 年末年始 祝日休み</td>
-              </tr>
-            </tfoot>
           </table>
-          <p class="info__tel-note">完全予約制</p>
-          <p class="info__tel--large">00-0123-4567</p>
+          <p class="info__tel">完全予約制</p>
+          <p class="info__tel info__tel--large">00-0123-4567</p>
         </div>
       </div>
     </section>
 <!-- contact -->    
     <section id="contact" class="contact">
-      <h1 class="contact__titile section-title">CONTACT</h1>
-      <div class="contact-box">
-        <form action="" method="post" class="contact-form">
-          <label for="name" class="contact-form__name">名前:
-            <input type="text" name="name" id="name" placeholder="姓" class="contact-form__input contact-form__name--familyname">
-            <input type="text" name="name" id="name" placeholder="名" class="contact-form__input contact-form__name--givenname">
-          </label>
-          <label for="mail" class="contact-form__mail">メールアドレス:
+      <h1 class="contact__title section-title">CONTACT</h1>
+      <!-- form -->
+      <div class="contact-form">
+        <form action="" method="post" class="flex-container contact-flex-container">
+          <!-- name -->
+          <label for="name" class="contact-form__label">名前:</label>
+            <div class="contact-form__name-area">
+              <!-- family name -->
+              <input type="text" name="name" id="name" placeholder="姓" class="contact-form__input contact-form__name--familyname">
+              <!-- given name -->
+              <input type="text" name="name" id="name" placeholder="名" class="contact-form__input contact-form__name--givenname">
+            </div>
+            <!-- mail -->
+          <label for="mail" class="contact-form__label">メールアドレス:</label>
             <input type="text" name="mail" id="mail" placeholder="sample@example.com" class="contact-form__input">
-          </label>
-          <label for="re-mail">メールアドレス（確認用）:
+            <!-- re-mail -->
+          <label for="re-mail" class="contact-form__label">メールアドレス（確認用）:</label>
             <input type="text" name="re-mail" id="re-mail" placeholder="sample@example.com" class="contact-form__input">
-          </label>
-          <label for="title" class="contact-form__title">お問い合わせ項目:
-            <select name="title" id="title" class="contact-form__select">
+            <!-- title -->
+          <label for="title" class="contact-form__label">お問い合わせ項目:</label>
+            <select name="title" id="title" class="contact-form__input">
               <option value="title" selected>項目を選んでください</option>
               <option value="title">予約について</option>
               <option value="title">キャンセルについて</option>
@@ -334,24 +369,27 @@
               <option value="title">アクセスについて</option>
               <option value="title">その他</option>
             </select>
-          </label>
-          <label for="content" class="contact-form__content">内容:
-            <textarea name="content"  id="content" cols="80" rows="20" class="contact-form__textarea"></textarea>
-          </label>
-          <input type="checkbox" name="agree" class="contact-form__checkbox" id="agree"><label for="agree">個人情報の取扱いに同意する</label>
-          <input type="submit" value="送信" class="contact-form__submit">
+            <!-- text -->
+          <label for="text" class="contact-form__label">内容:</label>
+            <textarea name="text"  id="text"  class="contact-form__textarea" placeholder="本文を入力してください。"></textarea>
+            <!-- agree -->
+          <div class="contact-form__agree-area">
+            <input type="checkbox" name="agree" id="agree" class="contact-form__checkbox" ><label for="agree">個人情報の取扱いに同意する</label>
+            <!-- submit -->
+          </div>
+          <input type="submit" value="送信" class="contact-form__submit contact-form__submit--hover">
         </form>
       </div>
     </section>
   </main>
 <!-- footer -->
   <footer class="footer">
-    <div class="footer-content-wrap">
-<!-- site map -->
-      <div class="footer-box footer-box--01">
+    <div class="flex-container footer-flex-container">
+      <!-- site map -->
+      <div class="footer-box footer-box-01">
         <h1 class="footer-box__title">Site Map</h1>
         <div class="footer-menu">
-          <ul class="flex-container footer-menu-flex-container">
+          <ul class="footer-menu-wrap">
             <li class="footer-menu__list"><a href="#concept" class="footer-menu__a footer-menu__a--hover">CONCEPT</a></li>
             <li class="footer-menu__list"><a href="#news" class="footer-menu__a footer-menu__a--hover">NEWS</a></li>
             <li class="footer-menu__list"><a href="./html/menu.html" class="footer-menu__a footer-menu__a-hover">MENU</a></li>
@@ -363,45 +401,43 @@
         </div>
       </div>
 <!-- social media -->      
-      <div class="footer-box footer-box--02">
+      <div class="footer-box footer-box-02">
         <h1 class="footer-box__title">Social Media</h1>
         <div class="sns">
-          <ul class="flex-container sns-flex-container--with-name">
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i"></i><span class="sns__name">Facebook</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i"></i><span class="sns__name">Twitter</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i"></i><span class="sns__name">Instagram</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line sns__i"></i><span class="sns__name">LINE</span></a></li>
+          <ul class="sns-container--with-name">
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i sns__i-footer sns__facebook--hover"></i><span class="sns__name">Facebook</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i sns__i-footer sns__twitter--hover"></i><span class="sns__name">Twitter</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i sns__i-footer sns__instagram--hover"></i><span class="sns__name">Instagram</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line sns__i sns__i-footer sns__line--hover"></i><span class="sns__name">LINE</span></a></li>
           </ul>
         </div>
       </div>
 <!-- reservation button -->      
-      <div class="footer-box footer-box--03">
-        <div class="flex-container footer-box-03-flex-container">
+      <div class="footer-box footer-box-03">
           <div class="footer__logo logo">
             <a href="" class="logo__a--hover">
               <img class="logo__img" src="img/logo.png" alt="ロゴ画像">
             </a>
           </div>
           <div class="flex-container footer-rsv-flex-container">
+            <!-- tel reservation -->
+            <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
             <button class="rsv-by-phone--rectangle">
-              <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
-                <i class="material-icons rsv-by-phone__i">
-                  phone_iphone
-                  </i>
-                <span class="rsv-by-phone__text">TEL予約</span>
-              </a>
-            </button>
+                <i class="fas fa-mobile-alt rsv-by-phone__i rsv-by-phone__i--footer"></i>
+                <span class="rsv-by-phone__text rsv-by-phone__text--footer">TEL予約</span>
+              </button>
+            </a>
+            <!-- LINE reservation -->
+            <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
             <button class="rsv-by-line--rectangle">
-              <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
-                <i class="fab fa-line rsv-by-line__i"></i>
-                <span class="rsv-by-line__text">LINE予約</span>
+                <i class="fab fa-line rsv-by-line__i rsv-by-line__i--footer"></i>
+                <span class="rsv-by-line__text rsv-by-line__text--footer">LINE予約</span>
+              </button>
               </a>
-            </button>
           </div>
         </div>
-      </div>
 <!-- company -->
-      <div class="footer-box footer-box--04">
+      <div class="footer-box footer-box-04">
         <h1 class="footer-box__title">Company</h1>
         <p class="footer-box__p">Reluxuriest 株式会社</p>
         <p class="footer-box__p--small">〒 540-0002</p>
