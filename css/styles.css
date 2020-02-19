@@ -126,6 +126,40 @@ select {
   }
 }
 
+@keyframes flip-up {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: none;
+  }
+  60% {
+    transform: rotateY(360deg);
+  }
+  70% {
+    transform: rotateY(360deg);
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: none;
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* =========================
             HERO
 ========================= */
@@ -154,6 +188,7 @@ select {
   font-weight: normal;
   font-size: 5.5em;
   margin: 0;
+  animation: fade-in 3.5s ease;
 }
 
 /* =========================
@@ -467,6 +502,7 @@ select {
 .info-box__img-wrap {
   width: 100%;
   height: 200px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -727,6 +763,15 @@ select {
   font-size: 1.4em;
 }
 
+.info__address-zip {
+  margin-bottom: 0;
+}
+
+.info__address {
+  margin-top: 0;
+}
+
+
 .business-time-table {
   margin: 20px 0;
   padding: 10px;
@@ -825,6 +870,10 @@ select {
   border: 1px solid #641388;
 }
 
+.contact-form__checkbox {
+  margin-right: 10px;
+}
+
 .contact-form__textarea {
   width: 50%;
   min-width: 260px;
@@ -876,26 +925,39 @@ select {
 
 
 .footer-box {
+  margin-bottom: 100px;
   padding: 30px;
-  color: #641388;
+  text-align: center;
+  color: #8A4DA5;
   font-size: 1.4em;
 }
 
 .footer-box__title {
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
+  display: inline-block;
+  position: relative;
   text-align: center;
   font-size: 1.6em;
   font-weight: normal;
 }
 
+.footer-box__title::before {
+  content: url(../img/footer/footer__label.svg);
+  position: absolute;
+  top: 10%;
+  left: -35px;
+}
 
+/* site map */
 
 .footer-box-01 {
   width: 15%;
-  min-width: 160px;
-  background: skyblue;
+  min-width: 155px;
 }
 
+.footer-menu-wrap {
+  text-align-last: left;
+}
 
 
 .footer-menu__list:not(:last-child) {
@@ -903,34 +965,38 @@ select {
 }
 
 .footer-menu__a {
-  color: #641388;
+  color: #8A4DA5;
 }
 
-.footer-menu__a--hover {
+.footer-menu__a--hover:hover {
   opacity: 0.7;
 }
 
+/* social medeia */
+
 .footer-box-02 {
   width: 15%;
-  min-width: 160px;
-  background: yellow;
+  min-width: 165px;
+}
 
+.footer-sns-wrap {
+  text-align-last: left;
 }
 
 .sns__i-footer {
-  color: #641388;
+  color: #8A4DA5;
   margin: 0 10px 10px 0;
 }
 
 .sns__name {
-  color: #641388;
+  color: #8A4DA5;
 }
+
+/* reservation button */
 
 .footer-box-03 {
   width: 40%;
   min-width: 320px;
-  background: pink;
-
 }
 
 .footer__logo {
@@ -948,24 +1014,120 @@ select {
 .rsv-by-phone--rectangle, .rsv-by-line--rectangle {
   width: 200px;
   height: 70px;
+  margin: 0 10px 10px 0;
   padding: 10px;
   background: #ffffff;
-  border: 2px solid #641388;
+  border: 2px solid #8A4DA5;
+}
+
+.rsv-by-phone--rectangle:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all .5s ease-out;
+}
+
+.rsv-by-line--rectangle:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all .5s ease-out;
 }
 
 .rsv-by-phone__i--footer, .rsv-by-line__i--footer {
-  color: #641388;
+  color: #8A4DA5;
   margin-right: 10px;
 }
 
 .rsv-by-phone__text--footer, .rsv-by-line__text--footer {
-  color: #641388;
-  vertical-align: middle;
+  margin: 0;
+  color: #8A4DA5;
+  line-height: 50px;
+  vertical-align: top;
+  font-size: 1.6em;
 }
+
+/* company */
 
 .footer-box-04 {
   width: 30%;
   min-width: 320px;
-  background: tomato;
 }
 
+.footer-info-wrap {
+  text-align-last: left;
+}
+
+.footer-box__p {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.footer-box__zip {
+  margin: 0;
+}
+
+.footer-box__address {
+  margin-top: 0;
+}
+
+.footer-box__p--small {
+  font-size: 0.8em;
+}
+
+.footer-box__p--large {
+  margin: 0;
+  line-height: 1.2em;
+  font-size: 3rem;
+}
+
+.footer-box__business-hour {
+  margin-top: 0;
+}
+
+
+.footer__copyright {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.footer__bottom-link-wrap {
+  padding-bottom: 1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-bottom-link__li {
+  display: inline-block;
+}
+
+.footer-bottom-link__li:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+.footer-bottom-link__a {
+  color: #ffffff;
+}
+
+
+/* =========================
+       scroll-up
+========================= */
+
+.scroll-up {
+  position: fixed;
+  left: 5%;
+  bottom: 1.6em;
+  text-align: center;
+}
+
+
+
+.scroll-up__i {
+  font-size: 4em;
+}
+
+.scroll-up__text {
+  margin: 5px 0 0;
+  font-size: 1em;
+}

@@ -59,7 +59,7 @@
         </a>
       </div>
 <!-- reservation button -->
-      <div class="flex-container hero-rsv-flex-container">
+      <div id="rsv-button--fixed" class="flex-container hero-rsv-flex-container">
         <a href="" class="rsv-by-phone">
           <button class="rsv-by-phone__square-button rsv-by-phone__square-button--hover">
               <i class="fas fa-mobile-alt rsv-by-phone__i"></i>
@@ -360,7 +360,7 @@
             <!-- title -->
           <label for="title" class="contact-form__label">お問い合わせ項目:</label>
             <select name="title" id="title" class="contact-form__input">
-              <option value="title" selected>項目を選んでください</option>
+              <option value="title" selected>お問い合わせ項目をお選び下さい</option>
               <option value="title">予約について</option>
               <option value="title">キャンセルについて</option>
               <option value="title">当サロンについて</option>
@@ -373,8 +373,9 @@
           <label for="text" class="contact-form__label">内容:</label>
             <textarea name="text"  id="text"  class="contact-form__textarea" placeholder="本文を入力してください。"></textarea>
             <!-- agree -->
-          <div class="contact-form__agree-area">
-            <input type="checkbox" name="agree" id="agree" class="contact-form__checkbox" ><label for="agree">個人情報の取扱いに同意する</label>
+            <div class="contact-form__agree-area">
+              
+              <input type="checkbox" name="agree" id="agree" class="contact-form__checkbox" ><label for="agree">個人情報の取扱いに同意する</label>
             <!-- submit -->
           </div>
           <input type="submit" value="送信" class="contact-form__submit contact-form__submit--hover">
@@ -383,7 +384,7 @@
     </section>
   </main>
 <!-- footer -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="flex-container footer-flex-container">
       <!-- site map -->
       <div class="footer-box footer-box-01">
@@ -404,11 +405,11 @@
       <div class="footer-box footer-box-02">
         <h1 class="footer-box__title">Social Media</h1>
         <div class="sns">
-          <ul class="sns-container--with-name">
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-facebook sns__i sns__i-footer sns__facebook--hover"></i><span class="sns__name">Facebook</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-twitter sns__i sns__i-footer sns__twitter--hover"></i><span class="sns__name">Twitter</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-instagram sns__i sns__i-footer sns__instagram--hover"></i><span class="sns__name">Instagram</span></a></li>
-            <li class="sns__list"><a href="" class="sns__a sns__a--hover"><i class="fab fa-line sns__i sns__i-footer sns__line--hover"></i><span class="sns__name">LINE</span></a></li>
+          <ul class="footer-menu-wrap">
+            <li class="sns__list"><a href="" class="sns__a"><i class="fab fa-facebook sns__i sns__i-footer sns__facebook--hover"></i><span class="sns__name sns__facebook--hover">Facebook</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a"><i class="fab fa-twitter sns__i sns__i-footer sns__twitter--hover"></i><span class="sns__name sns__twitter--hover">Twitter</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a"><i class="fab fa-instagram sns__i sns__i-footer sns__instagram--hover"></i><span class="sns__name sns__instagram--hover">Instagram</span></a></li>
+            <li class="sns__list"><a href="" class="sns__a"><i class="fab fa-line sns__i sns__i-footer sns__line--hover"></i><span class="sns__name sns__line--hover">LINE</span></a></li>
           </ul>
         </div>
       </div>
@@ -421,14 +422,14 @@
           </div>
           <div class="flex-container footer-rsv-flex-container">
             <!-- tel reservation -->
-            <a href="" class="rsv-by-phone__a rsv-by-phone-a--hover">
+            <a href="" class="rsv-by-phone__a">
             <button class="rsv-by-phone--rectangle">
                 <i class="fas fa-mobile-alt rsv-by-phone__i rsv-by-phone__i--footer"></i>
                 <span class="rsv-by-phone__text rsv-by-phone__text--footer">TEL予約</span>
               </button>
             </a>
             <!-- LINE reservation -->
-            <a href="" class="rsv-by-line__a rsv-by-line__a--hover">
+            <a href="" class="rsv-by-line__a">
             <button class="rsv-by-line--rectangle">
                 <i class="fab fa-line rsv-by-line__i rsv-by-line__i--footer"></i>
                 <span class="rsv-by-line__text rsv-by-line__text--footer">LINE予約</span>
@@ -439,16 +440,24 @@
 <!-- company -->
       <div class="footer-box footer-box-04">
         <h1 class="footer-box__title">Company</h1>
-        <p class="footer-box__p">Reluxuriest 株式会社</p>
-        <p class="footer-box__p--small">〒 540-0002</p>
-        <p class="footer-box__p">大阪府大阪市中央区大阪城１−１</p>
-        <p class="footer-box__p--large">00-0123-4567</p>
-        <p class="footer-box__p--small">受付10:00 ~ 19:00 定休日木曜・祝祭日</p>
-      </div>
+        <div class="footer-info-wrap">
+          <p class="footer-box__p">Reluxuriest 株式会社</p>
+          <p class="footer-box__zip footer-box__p--small">〒 540-0002</p>
+          <p class="footer-box__address footer-box__p">大阪府大阪市中央区大阪城１−１</p>
+          <p class="footer-box__tel footer-box__p--large">00-0123-4567</p>
+          <p class="footer-box__business-hour footer-box__p--small">受付10:00 ~ 19:00 定休日木曜・祝祭日</p>
+       </div>
+        </div>
+    </div>
+    <div id="scroll-up" class="scroll-up">
+      <a href="#concept" class="scroll-up__a scroll-up__a--hover">
+        <i class="fas fa-angle-double-up scroll-up__i"></i>
+        <p class="scroll-up__text">TOP</p>
+      </a>
     </div>
     <p class="footer__copyright">CopyRight 2020 Reluxuriest Co.,Ltd. All Rights Reserved.</p>
     <div class="footer-bottom-link">
-      <ul class="flex-container link-flex-container">
+      <ul class="footer__bottom-link-wrap">
         <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">店舗情報</a></li>
         <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">個人情報保護方針</a></li>
         <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">特定商取引法に基づく表記</a></li>
