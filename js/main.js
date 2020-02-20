@@ -32,17 +32,32 @@ $(function() {
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
  });
- 
-    //要素のフェードイン
 
+    //リロード時の各セクション表示処理
+    $('section').each(function () {
+        
+        if($(window).scrollTop() > $(this).offset().top) {
+            $(this).removeClass('js-hidden');
+        }
+    });
+
+    //各sectionの出現
+    $(window).scroll(function () {
+        $('.js-hidden').each(function () {
+            let targetOffset = $(this).offset();
+            let windowHeight = $(window).height();
+            if($(window).scrollTop() > targetOffset.top - windowHeight + windowHeight / 5) {
+                $(this).addClass('js-showup').removeClass('js-hidden');
+            }
+        });
+    });
 
     //TOPへ戻る
     let scrollUp = $('#scroll-up');
         scrollUp.hide();
     let newsSection = $('#news').offset();
 
-        $(window).scroll(function () {
-
+     $(window).scroll(function () {
         if ($(this).scrollTop() > newsSection.top ) {
             scrollUp.fadeIn();
         } else {

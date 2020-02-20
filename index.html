@@ -27,7 +27,7 @@
   <link rel="icon" href="favicon.ico" sizes="16x16" type="image/mage/vnd.microsoft.icon">
   <link rel="icon" href="favicon.ico" sizes="32x32" type="image/mage/vnd.microsoft.icon">
   <link rel="icon" href="favicon.ico" sizes="48x48" type="image/mage/vnd.microsoft.icon">
-  <link rel="icon" href="favicon.pico sizes="62x62" type="image/mage/vnd.microsoft.icon"> 
+  <link rel="icon" href="favicon.ico" sizes="62x62" type="image/mage/vnd.microsoft.icon"> 
   <meta name="msapplication-TileImage" content="img/icons/windows_icon.png"> 
   <meta name="msapplication-TileColor" content="#8A4DA5">
   <!-- windows icon-->
@@ -46,7 +46,7 @@
 <!-- hero header-->
     <div class="hero">
       <div class="hero__logo logo">
-        <a href="" class="logo__a--hover">
+        <a href="./../inex.html" class="logo__a--hover">
           <img class="logo__img" src="img/logo.svg" alt="ロゴ画像">
         </a>
       </div>
@@ -78,27 +78,36 @@
 <!-- global nav -->
     <div class="global-nav-area">
       <div id="global-nav" class="global-nav-header">
+        <!-- logo -->
         <div class="fixed-header__logo logo"><a href="" class="logo__a logo__a--hover"><img src="img/logo.svg" alt="ロゴ画像" class="logo__img"></a></div>
         <nav class="global-nav">
+
           <ul class="flex-container global-nav-flex-container">
+            <!-- concept -->
             <a href="#concept" class="global-nav__a global-nav__list--hover">
               <li class="global-nav__list global-nav__list--hover">CONCEPT</li>
             </a>
+            <!-- news -->
             <a href="#news" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">NEWS</li>
             </a>
-            <a href="/html/menu.html" class="global-nav__a">
+            <!-- menu -->
+            <a href="./html/menu.html" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">MENU</li>
             </a>
+            <!-- reviews -->
             <a href="#reviews" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">REVIEWS</li>
             </a>
+            <!-- access -->
             <a href="#access" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">ACCESS</li>
             </a>
+            <!-- faq -->
             <a href="/html/faq.html" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">FAQ</li>
             </a>
+            <!-- contact -->
             <a href="#contact" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">CONTACT</li>
             </a>
@@ -109,8 +118,8 @@
   </header>
   <main>
 <!-- concept -->
-    <section id="concept" class="concept">
-      <h1 class="concept__title section-title">CONCEPT</h1>
+    <section id="concept" class="concept js-hidden">
+      <h1 class="concept__title section__title">CONCEPT</h1>
       <div class="content-wrap">
         <div class="desc-box">
           <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
@@ -141,8 +150,8 @@
       </div>
     </section>
 <!-- news -->
-    <section id="news" class="news">
-      <h1 class="news__title section-title">NEWS</h1>
+    <section id="news" class="news js-hidden">
+      <h1 class="news__title section__title">NEWS</h1>
       <div class="flex-container news-flex-container">
         <!-- box-1 -->
         <div class="info-box">
@@ -184,8 +193,8 @@
       </div>
     </section>
 <!-- reviews -->
-    <section id="reviews" class="reviews">
-      <h1 class="reviews__title section-title">REVIEWS</h1>
+    <section id="reviews" class="reviews js-hidden">
+      <h1 class="reviews__title section__title">REVIEWS</h1>
       <div class="flex-container reviews-flex-container">
         <!-- image -->
         <div class="reviews__img-wrap">
@@ -258,8 +267,8 @@
       </div>
     </section>
 <!-- access -->
-    <section id="access" class="access">
-      <h1 class="access__title section-title">ACCESS</h1>
+    <section id="access" class="access js-hidden">
+      <h1 class="access__title section__title">ACCESS</h1>
       <div class="flex-container access-flex-container">
         <!-- map -->
         <div class="map-background">
@@ -338,8 +347,8 @@
       </div>
     </section>
 <!-- contact -->    
-    <section id="contact" class="contact">
-      <h1 class="contact__title section-title">CONTACT</h1>
+    <section id="contact" class="contact js-hidden">
+      <h1 class="contact__title section__title">CONTACT</h1>
       <!-- form -->
       <div class="contact-form">
         <form action="" method="post" class="flex-container contact-flex-container">
@@ -470,5 +479,5 @@
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> <!-- jQuery -->
-<script src="js/main.js"></script> <!-- JavaScript -->
+<script src="./js/main.js"></script> <!-- JavaScript -->
 </html>

@@ -67,7 +67,7 @@ select {
   margin: 0 10px 20px 0;
 }
 
-.section-title {
+.section__title {
     margin-bottom: 50px;
     position: relative;
     left: 50%;
@@ -75,7 +75,7 @@ select {
     display: inline-block;
   }
 
-  .section-title::before {
+  .section__title::before {
     content: "";
     width: 6px;
     height: 80%;
@@ -86,7 +86,7 @@ select {
     left: -21px;
   }
 
-  .section-title::after {
+  .section__title::after {
     content: "";
     width: 2px;
     height: 80%;
@@ -95,6 +95,17 @@ select {
     top: 50%;
     transform: translateY(-50%);
     left: -10px;
+  }
+
+  .js-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  .js-showup {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1.5s ease-out;
   }
 
 /* =========================
