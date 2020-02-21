@@ -2,14 +2,13 @@ $(function() {
 
 
   //global-navの位置固定
-
   let globalNavOffset = $('#global-nav').offset();
   $(window).scroll(function () {
 
       if ($(this).scrollTop() > globalNavOffset.top) {
-          $('#global-nav').addClass('fixed-header');
+          $('#global-nav').addClass('global-nav-header--fixed');
       } else {
-          $('#global-nav').removeClass('fixed-header');
+          $('#global-nav').removeClass('global-nav-header--fixed');
       }
   });
 
@@ -29,14 +28,21 @@ $(function() {
     let href= $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href);
     let position = target.offset().top - adjust;
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
+    
+    if(target.hasClass("js-hidden")){
+        $('body,html').animate({scrollTop:position - 50 //js-showupのtranslateY(50)分を調整
+        }, speed, 'swing');
+    } else {
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    }
  });
+
 
     //リロード時の各セクション表示処理
     $('section').each(function () {
         
-        if($(window).scrollTop() > $(this).offset().top) {
+        if($(window).scrollTop() >= $(this).offset().top) {
             $(this).removeClass('js-hidden');
         }
     });
@@ -46,7 +52,7 @@ $(function() {
         $('.js-hidden').each(function () {
             let targetOffset = $(this).offset();
             let windowHeight = $(window).height();
-            if($(window).scrollTop() > targetOffset.top - windowHeight + windowHeight / 5) {
+            if($(window).scrollTop() >= targetOffset.top - windowHeight + windowHeight / 5) {
                 $(this).addClass('js-showup').removeClass('js-hidden');
             }
         });

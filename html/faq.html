@@ -11,7 +11,7 @@
 <!-- CSS -->
 <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/> <!-- Reset CSS -->
   <link rel="stylesheet" href="./../css/styles.css"> <!-- Main CSS-->
-  <link rel="stylesheet" href="./../css/menu.css"> <!-- Menu CSS -->
+  <link rel="stylesheet" href="./../css/faq.css"> <!-- FAQ CSS-->
 <!-- CARD -->
   <meta property="og:url" content="">
   <meta property="og:title" content="Reluxuriest | 美しさは、芸術だ。">
@@ -45,13 +45,13 @@
 <body>
   <header class="header">
 <!-- hero header-->
-    <div class="hero-menu">
+    <div class="hero-faq">
       <div class="hero__logo logo">
         <a href="./../index.html" class="logo__a--hover">
           <img class="logo__img" src="./../img/logo.svg" alt="ロゴ画像">
         </a>
       </div>
-      <h1 class="hero-menu__title">MENU</h1>
+      <h1 class="hero-faq__title">FAQ</h1>
 <!-- scroll down -->      
       <div class="scroll-down">
         <a href="#policy" class="scroll-down__a scroll-down__a--hover">
@@ -76,8 +76,8 @@
       </div>
     </div>
   </div>
-   <!--fixed SNS button-->    
-   <div id="sns-button" class="sns-button">
+  <!--fixed SNS button-->    
+  <div id="sns-button" class="sns-button">
     <ul class="flex-container sns-flex-container--fixed">
       <!-- facebook -->
       <li class="sns__list"><a href="" class="sns__a"><i id="facebook" class="fab fa-facebook sns__i sns__i--column sns__facebook--hover"></i></a></li>
@@ -104,7 +104,7 @@
               <li class="global-nav__list global-nav__list--hover">NEWS</li>
             </a>
             <!-- menu -->
-            <a href="" class="global-nav__a">
+            <a href="./menu.html" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">MENU</li>
             </a>
             <!-- reviews -->
@@ -116,7 +116,7 @@
               <li class="global-nav__list global-nav__list--hover">ACCESS</li>
             </a>
             <!-- faq -->
-            <a href="./faq.html" class="global-nav__a">
+            <a href="" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">FAQ</li>
             </a>
             <!-- contact -->
@@ -129,51 +129,149 @@
     </div>
   </header>
   <main>
-<!-- policy -->
-  <section id="policy" class="policy js-hidden">
-    <h1 class="section__title policy__title">Policy</h1>
-    <div class="policy-desc">
-      <h1 class="policy-desc__title">確かな技術力で、最高の美を提供します。</h1>
-      <p class="policy-desc__text">
-        すべてのスタッフは国際エステティック連盟（IEO)の認定証を保有し、<br>
-        連盟の定める基準（A10)を超える当サロン独自の厳しい研修に合格した優秀なスタッフが揃っています。
-      </p>
-      <p class="policy-desc__text">
-        施術前に必ずスキンチェックを行い、<br>
-        その時のコンディションに合わせた適切な施術内容をご案内いたします。
-      </p>
-      <p class="policy-desc__text">
-        ご来店いただいた後もお客様自身で美を継続して頂けるように、<br>
-        一人一人に合わせた普段のお手入れ方法についてアドバイスをさせていただきます。
-      </p>
-    </div>
-  </section>
- 
-<!-- corces -->
-  <section class="corces js-hidden">
-    <h1 class="section__title policy__title">Courses</h1>
-    <div class="corces-desc">
-      <dl>
-        <!-- Queen -->
-        <dt class="corces-desc__title">Queen</dt>
-        <dd class="corces-desc__text">天然植物由来のオリジナルオイルを使用した、最高級コースです。</dd>
-        <dd class="corces-desc__price">¥24,000 / 120分</dd>
-        <!-- Daiamond -->
-        <dt class="corces-desc__title">Daiamond</dt>
-        <dd class="corces-desc__text">最新の技術を使用し、施術効果を最大化させた、贅沢コースです。</dd>
-        <dd class="corces-desc__price">¥18,000 / 90分</dd>
-        <!-- Sapphire -->
-        <dt class="corces-desc__title">Sapphire</dt>
-        <dd class="corces-desc__text">伝統的技法で心も身体を癒し、本来の肌の輝きを蘇らせる、特別コースです。</dd>
-        <dd class="corces-desc__price">¥1,2000 / 60分</dd>
-        <!-- Sparkling -->
-        <dt class="corces-desc__title">Sparkling</dt>
-        <dd class="corces-desc__text">オリジナル技法により最短で美のきらめきを生みだす、標準コースです。</dd>
-        <dd class="corces-desc__price">¥6,000 / 30分</dd>
-      </dl>
-    </div>
-  </section>
-<!-- news --> 
+<!-- questions -->    
+    <section class="questions">
+      <h1 class="section__title questions__title">Questions</h1>
+      <div class="flex-container questions-flex-container">
+        <div class="questions__index-wrap">
+          <ul class="flex-container questions__index-flex-contaienr">
+            <li class="questions__list"><a href="#about-reservation" class="questions__index">ご予約について</a></li>
+            <li class="questions__list"><a href="#about-cancellation" class="questions__index">キャンセルについて</a></li>
+            <li class="questions__list"><a href="#about-payment" class="questions__index">お支払い方法について</a></li>
+            <li class="questions__list"><a href="#about-salon" class="questions__index">当サロンについて</a></li>
+            <li class="questions__list"><a href="#about-operation" class="questions__index">施術について</a></li>
+            <li class="questions__list"><a href="#about-access" class="questions__index">アクセスについて</a></li>
+            <li class="questions__list"><a href="#about-others" class="questions__index">その他について</a></li>
+          </ul>
+        </div>
+        <div class="questions__content-wrap">
+          <!-- about reservation -->
+          <div class="category-wrap">
+            <h1 id="about-reservation" class="question__title">予約について</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">予約をする必要はありますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">当サロンは完全予約制となります。お電話またはLINEにてご予約承っています。</dd>
+      
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">予約をする必要はありますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">当サロンは完全予約制となります。お電話またはLINEにてご予約承っています。</dd>
+  
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">予約の空きはありますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">まずは、ご連絡ください。空き状況により当日予約も可能です。</dd>
+  
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">どのように予約すれば良いですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">お電話またはLINEにてご予約承っています。</dd>
+  
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">予約の変更は可能ですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">空き状況によりますが、変更は可能です。変更希望日時をご連絡ください。</dd>
+          </div>
+         
+          <!-- about cancellation -->
+          <div class="category-wrap">
+            <h1 id="about-cancellation" class="question__title">キャンセルについて</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">キャンセル料はかかりますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">3日前までのキャンセルについては無料です。<br>
+            2日前からご予約コース料金の50%、当日は100%のキャンセル料金を頂戴しております。</dd>
+  
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">キャンセルの方法を教えてください。</dl>
+            <!--answer -->
+            <dd class="question__answer">直接お電話またはLINEにてご連絡ください。</dd>
+          </div>
+
+          <!-- about method of payment -->
+          <div class="category-wrap">
+            <h1 id="about-payment" class="question__title">お支払い方法について</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">クレジットカードは利用できますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">VISA、MASTER, JCB, AMEXの各種クレジットカードをご利用いただけます。</dd>
+
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">電子マネーで支払い可能ですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">申し訳ございません。現在、電子マネーでのお支払いには対応しておりません。</dd>
+          </div>
+
+          <div class="category-wrap">
+            <h1 id="about-salon" class="question__title">当サロンについて</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">男性でも利用できますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">申し訳ございません。現在は女性のみご利用いただけます。</dd>
+
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">どのような方が所属していますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">当サロンの全スタッフは国際エステティック連盟（IEO)の認定証を保有しています。<br>
+            また、当サロン独自の厳しい研修に合格した女性エステティシャンのみが施術を行います。</dd>
+          </div>
+        
+          <div class="category-wrap">
+            <h1 id="about-operation" class="question__title">施術について</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">どのような施術ですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">コースによって異なりますが、<br>
+            伝統的技法および当サロンが考案したオリジナル技法で施術を行います。</dd>
+
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">一部施術内容を変更できますか？</dl>
+            <!--answer -->
+            <dd class="question__answer">コース内容の中でご希望に合わせた施術が可能です。</dd>
+          </div>
+
+          <div class="category-wrap">
+            <h1 id="about-access" class="question__title">アクセスについて</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">最寄駅はどこですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">JR大阪環状線森ノ宮駅、大阪城公園駅が最寄駅です。</dd>
+
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">駅から徒歩どれくらいですか？</dl>
+            <!--answer -->
+            <dd class="question__answer">JR大阪環状線森ノ宮駅3番出口より徒歩10分、大阪公園駅1番出口より徒歩8分程です。</dd>
+          </div>
+
+          <div class="category-wrap">
+            <h1 id="about-others" class="question__title">その他について</h1>
+            <!-- question -->
+            <span class="question__q">Q</span>
+            <dl class="question__question">問い合わせ先を教えてください。</dl>
+            <!--answer -->
+            <dd class="question__answer">電話、LINE、お問い合わせフォームにてご質問承っております。<br>
+            ご不明点等ございましたらお気軽にお問い合わせください。</dd>
+          </div>
+
+      </div>
+    </section>
+    <!-- news --> 
   <section id="news" class="news js-hidden">
     <h1 class="news__title section__title">NEWS</h1>
     <div class="flex-container news-flex-container">
@@ -433,3 +531,4 @@ crossorigin="anonymous"></script> <!-- jQuery -->
 <script src="./../js/main.js"></script> <!-- JavaScript -->
 </body>
 </html>
+

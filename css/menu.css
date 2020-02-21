@@ -26,13 +26,35 @@
 }
 
 /* =========================
+      SNS link fiexed
+========================= */
+
+
+.sns-button {
+  position: absolute;
+  top: 150vh;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 1;
+}
+
+.sns-button--fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+/* =========================
             POLICY
 ========================= */
 .policy {
-  position: relative;
+  /* position: relative; */
 }
 
 .policy-desc {
+  width: 80%;
+  margin: 0 auto;
   color: #8a4da5;
 }
 .policy-desc__title {
@@ -46,6 +68,7 @@
   text-align: center;
   font-size: 1.6em;
 }
+
 
 /* =========================
             CORCES

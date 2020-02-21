@@ -46,7 +46,7 @@
 <!-- hero header-->
     <div class="hero">
       <div class="hero__logo logo">
-        <a href="./../inex.html" class="logo__a--hover">
+        <a href="index.html" class="logo__a--hover">
           <img class="logo__img" src="img/logo.svg" alt="ロゴ画像">
         </a>
       </div>
@@ -74,6 +74,17 @@
         </a>
       </div>
     </div>
+  </div>
+  <!--fixed SNS button-->    
+  <div id="sns-button" class="sns-button">
+    <ul class="flex-container sns-flex-container--fixed">
+      <!-- facebook -->
+      <li class="sns__list"><a href="" class="sns__a"><i id="facebook" class="fab fa-facebook sns__i sns__i--column sns__facebook--hover"></i></a></li>
+      <!-- twitter -->
+      <li class="sns__list"><a href="" class="sns__a"><i id="twitter" class="fab fa-twitter sns__i sns__i sns__i--column sns__twitter--hover"></i></a></li>
+      <!-- instagram -->
+      <li class="sns__list"><a href="" class="sns__a"><i id="instagram" class="fab fa-instagram sns__i sns__i sns__i--column sns__instagram--hover"></i></a></li>
+    </ul>
   </div>
 <!-- global nav -->
     <div class="global-nav-area">
@@ -104,7 +115,7 @@
               <li class="global-nav__list global-nav__list--hover">ACCESS</li>
             </a>
             <!-- faq -->
-            <a href="/html/faq.html" class="global-nav__a">
+            <a href="./html/faq.html" class="global-nav__a">
               <li class="global-nav__list global-nav__list--hover">FAQ</li>
             </a>
             <!-- contact -->
@@ -119,7 +130,7 @@
   <main>
 <!-- concept -->
     <section id="concept" class="concept js-hidden">
-      <h1 class="concept__title section__title">CONCEPT</h1>
+      <h1 class="section__title concept__title">CONCEPT</h1>
       <div class="content-wrap">
         <div class="desc-box">
           <h1 class="desc-box__title">美を追求する、すべての人へ</h1>
@@ -136,17 +147,6 @@
         <div class="concept__img-wrap">
           <img src="./img/concept/concept__main.jpg" alt="" class="concept__img">
         </div>
-      </div>
-<!--fixed SNS button-->    
-      <div id="sns-button" class="sns-button">
-        <ul class="flex-container sns-flex-container--fixed">
-          <!-- facebook -->
-          <li class="sns__list"><a href="" class="sns__a"><i id="facebook" class="fab fa-facebook sns__i sns__i--column sns__facebook--hover"></i></a></li>
-          <!-- twitter -->
-          <li class="sns__list"><a href="" class="sns__a"><i id="twitter" class="fab fa-twitter sns__i sns__i sns__i--column sns__twitter--hover"></i></a></li>
-          <!-- instagram -->
-          <li class="sns__list"><a href="" class="sns__a"><i id="instagram" class="fab fa-instagram sns__i sns__i sns__i--column sns__instagram--hover"></i></a></li>
-        </ul>
       </div>
     </section>
 <!-- news -->
@@ -464,14 +464,16 @@
         <p class="scroll-up__text">TOP</p>
       </a>
     </div>
-    <p class="footer__copyright">CopyRight 2020 Reluxuriest Co.,Ltd. All Rights Reserved.</p>
-    <div class="footer-bottom-link">
-      <ul class="footer__bottom-link-wrap">
-        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">店舗情報</a></li>
-        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">個人情報保護方針</a></li>
-        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">特定商取引法に基づく表記</a></li>
-        <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">お問い合わせ</a></li>
-      </ul>
+    <div class="footer-copyright-wrap">
+      <p class="footer__copyright">CopyRight 2020 Reluxuriest Co.,Ltd. All Rights Reserved.</p>
+      <div class="footer-bottom-link">
+        <ul class="footer__bottom-link-wrap">
+          <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">店舗情報</a></li>
+          <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">個人情報保護方針</a></li>
+          <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">特定商取引法に基づく表記</a></li>
+          <li class="footer-bottom-link__li"><a href="" class="footer-bottom-link__a footer-bottom-link__a--hover">お問い合わせ</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

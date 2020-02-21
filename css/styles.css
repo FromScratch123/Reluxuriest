@@ -97,6 +97,10 @@ select {
     left: -10px;
   }
 
+/* =========================
+          JavaScript
+========================= */
+
   .js-hidden {
     opacity: 0;
     transform: translateY(50px);
@@ -270,6 +274,82 @@ select {
 }
 
 /* =========================
+     SNS link fiexed
+========================= */
+
+.sns-button {
+  position: absolute;
+  top: 150vh;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 1;
+}
+
+.sns-button--fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.sns-flex-container--fixed {
+  padding: 0;
+  flex-flow: column;
+  position: relative;
+  display: inline-block;
+}
+
+
+.sns-flex-container--fixed::before {
+  content: "";
+  width: 2px;
+  height: 80px;
+  background: #3c3c3c;
+  position: absolute;
+  top: calc(-100% - 20px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sns-flex-container--fixed::after {
+  content: "";
+  width: 2px;
+  height: 80px;
+  background: #3c3c3c;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sns__i--white {
+  color: #ffffff;
+}
+
+.sns__facebook--hover:hover {
+  color: #3b5998;
+}
+
+.sns__twitter--hover:hover {
+  color: #55ACEE;
+}
+
+.sns__instagram--hover:hover {
+   background: webkit-linear-gradient(200deg, #8a3ab9,#e95950,#bc2a8d 40%,#fccc63,#fbad50 98%, #cd486b,#4c68d7);
+   background: linear-gradient(200deg, #8a3ab9,#e95950,#bc2a8d,#fccc63,#fbad50 98%, #cd486b ,#4c68d7);;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.sns__i {
+  font-size: 28px;
+}
+
+.sns__i--column {
+  margin-bottom: 10px;
+}
+
+/* =========================
           HEADER
 ========================= */
 
@@ -289,7 +369,7 @@ select {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.fixed-header {
+.global-nav-header--fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -339,7 +419,6 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  position: relative;
 }
 
 .content-wrap {
@@ -405,79 +484,7 @@ select {
   width: 100%;
   min-height: 450px;
 }
-/* =========================
-     SNS link fiexed
-========================= */
 
-.sns-button {
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
-  right: 10px;
-  z-index: 1;
-}
-
-.sns-button--fixed {
-  position: fixed;
-
-}
-
-.sns-flex-container--fixed {
-  padding: 0;
-  flex-flow: column;
-  position: relative;
-  display: inline-block;
-}
-
-
-.sns-flex-container--fixed::before {
-  content: "";
-  width: 2px;
-  height: 80px;
-  background: #3c3c3c;
-  position: absolute;
-  top: calc(-100% - 20px);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sns-flex-container--fixed::after {
-  content: "";
-  width: 2px;
-  height: 80px;
-  background: #3c3c3c;
-  position: absolute;
-  top: calc(100% + 20px);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sns__i--white {
-  color: #ffffff;
-}
-
-.sns__facebook--hover:hover {
-  color: #3b5998;
-}
-
-.sns__twitter--hover:hover {
-  color: #55ACEE;
-}
-
-.sns__instagram--hover:hover {
-   background: webkit-linear-gradient(200deg, #8a3ab9,#e95950,#bc2a8d 40%,#fccc63,#fbad50 98%, #cd486b,#4c68d7);
-   background: linear-gradient(200deg, #8a3ab9,#e95950,#bc2a8d,#fccc63,#fbad50 98%, #cd486b ,#4c68d7);;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-
-.sns__i {
-  font-size: 28px;
-}
-
-.sns__i--column {
-  margin-bottom: 10px;
-}
 
 /* =========================
           NEWS
@@ -921,12 +928,12 @@ select {
           FOOTER
 ========================= */
 
-.footer {
+/* .footer {
   background-image: url(../img/background/background__oval-footer.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-}
+} */
 
 .footer-flex-container {
   flex-flow: row wrap;
@@ -1118,6 +1125,14 @@ select {
 
 .footer-bottom-link__a {
   color: #ffffff;
+}
+
+.footer-copyright-wrap {
+  padding-top: 30px;
+  background-image: url(../img/background/background__oval-footer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 
