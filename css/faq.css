@@ -30,6 +30,7 @@
 .questions-flex-container {
   width: 80%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .questions__index-wrap {
@@ -51,7 +52,7 @@
 
 .questions__content-wrap {
   width: 81%;
-  min-width: 700px;
+  min-width: 320px;
   padding: 0 50px;
 }
 
@@ -111,4 +112,8 @@
   font-size: 1.5em;
   background: linear-gradient(45deg, transparent 49%, #8a4da5 49%, #8a4da5 51%, transparent 51%, transparent);
   background: -webkit-linear-gradient(45deg, transparent 49%, #8a4da5 49%, #8a4da5 51%, transparent 51%, transparent);
+}
+
+.question__a {
+  color: #8a4da5;
 }

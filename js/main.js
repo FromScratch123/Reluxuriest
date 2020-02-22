@@ -1,5 +1,14 @@
 $(function() {
 
+  //hambarger-menuの表示切替
+  let hambarger = $('#hambarger');
+  hambarger.click(function (){
+     $('.drawer').toggleClass('js-drawer--show');
+     $('.hambarger__bar1').toggleClass('js-drawer--show');
+     $('.hambarger__bar2').toggleClass('js-drawer--show');
+     $('.hambarger__bar3').toggleClass('js-drawer--show');
+  });
+
 
   //global-navの位置固定
   let globalNavOffset = $('#global-nav').offset();
@@ -58,7 +67,7 @@ $(function() {
         });
     });
 
-    //TOPへ戻る
+    //TOPへ戻る(HOME/MENU)
     let scrollUp = $('#scroll-up');
         scrollUp.hide();
     let newsSection = $('#news').offset();
@@ -70,5 +79,6 @@ $(function() {
             scrollUp.fadeOut();
         }
     });
-  
+
+    
 });

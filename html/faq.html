@@ -52,9 +52,50 @@
         </a>
       </div>
       <h1 class="hero-faq__title">FAQ</h1>
+<!-- hambarger menu -->
+    <button id="hambarger" class="hambarger">
+      <span class="hambarger__bar hambarger__bar1"></span>
+      <span class="hambarger__bar hambarger__bar2"></span>
+      <span class="hambarger__bar hambarger__bar3"></span>
+    </button>
+    <div class="drawer">
+      <nav class="menu-wrap">
+
+        <ul class="flex-container hambarger-flex-container">
+          <!-- concept -->
+          <a href="#concept" class="hambarger__a hambarger__list--hover">
+            <li class="hambarger__list hambarger__list--hover">CONCEPT</li>
+          </a>
+          <!-- news -->
+          <a href="#news" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">NEWS</li>
+          </a>
+          <!-- menu -->
+          <a href="./html/menu.html" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">MENU</li>
+          </a>
+          <!-- reviews -->
+          <a href="#reviews" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">REVIEWS</li>
+          </a>
+          <!-- access -->
+          <a href="#access" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">ACCESS</li>
+          </a>
+          <!-- faq -->
+          <a href="./html/faq.html" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">FAQ</li>
+          </a>
+          <!-- contact -->
+          <a href="#contact" class="hambarger__a">
+            <li class="hambarger__list hambarger__list--hover">CONTACT</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
 <!-- scroll down -->      
       <div class="scroll-down">
-        <a href="#policy" class="scroll-down__a scroll-down__a--hover">
+        <a href="#questions" class="scroll-down__a scroll-down__a--hover">
           <i class="fas fa-angle-double-down scroll-down__i"></i>
           <p class="scroll-down__text">SCROLL</p>
         </a>
@@ -130,7 +171,7 @@
   </header>
   <main>
 <!-- questions -->    
-    <section class="questions">
+    <section id="questions" class="questions">
       <h1 class="section__title questions__title">Questions</h1>
       <div class="flex-container questions-flex-container">
         <div class="questions__index-wrap">
@@ -146,14 +187,8 @@
         </div>
         <div class="questions__content-wrap">
           <!-- about reservation -->
-          <div class="category-wrap">
-            <h1 id="about-reservation" class="question__title">予約について</h1>
-            <!-- question -->
-            <span class="question__q">Q</span>
-            <dl class="question__question">予約をする必要はありますか？</dl>
-            <!--answer -->
-            <dd class="question__answer">当サロンは完全予約制となります。お電話またはLINEにてご予約承っています。</dd>
-      
+          <div id="about-reservation"  class="category-wrap js-hidden">
+            <h1 class="question__title">予約について</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">予約をする必要はありますか？</dl>
@@ -180,8 +215,8 @@
           </div>
          
           <!-- about cancellation -->
-          <div class="category-wrap">
-            <h1 id="about-cancellation" class="question__title">キャンセルについて</h1>
+          <div id="about-cancellation" class="category-wrap js-hidden">
+            <h1 class="question__title">キャンセルについて</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">キャンセル料はかかりますか？</dl>
@@ -197,8 +232,8 @@
           </div>
 
           <!-- about method of payment -->
-          <div class="category-wrap">
-            <h1 id="about-payment" class="question__title">お支払い方法について</h1>
+          <div id="about-payment"  class="category-wrap js-hidden">
+            <h1 class="question__title">お支払い方法について</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">クレジットカードは利用できますか？</dl>
@@ -212,8 +247,8 @@
             <dd class="question__answer">申し訳ございません。現在、電子マネーでのお支払いには対応しておりません。</dd>
           </div>
 
-          <div class="category-wrap">
-            <h1 id="about-salon" class="question__title">当サロンについて</h1>
+          <div id="about-salon"  class="category-wrap js-hidden">
+            <h1 class="question__title">当サロンについて</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">男性でも利用できますか？</dl>
@@ -228,8 +263,8 @@
             また、当サロン独自の厳しい研修に合格した女性エステティシャンのみが施術を行います。</dd>
           </div>
         
-          <div class="category-wrap">
-            <h1 id="about-operation" class="question__title">施術について</h1>
+          <div id="about-operation"  class="category-wrap js-hidden">
+            <h1 class="question__title">施術について</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">どのような施術ですか？</dl>
@@ -244,8 +279,8 @@
             <dd class="question__answer">コース内容の中でご希望に合わせた施術が可能です。</dd>
           </div>
 
-          <div class="category-wrap">
-            <h1 id="about-access" class="question__title">アクセスについて</h1>
+          <div id="about-access" class="category-wrap js-hidden">
+            <h1 class="question__title">アクセスについて</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">最寄駅はどこですか？</dl>
@@ -259,13 +294,13 @@
             <dd class="question__answer">JR大阪環状線森ノ宮駅3番出口より徒歩10分、大阪公園駅1番出口より徒歩8分程です。</dd>
           </div>
 
-          <div class="category-wrap">
-            <h1 id="about-others" class="question__title">その他について</h1>
+          <div id="about-others" class="category-wrap js-hidden">
+            <h1 class="question__title">その他について</h1>
             <!-- question -->
             <span class="question__q">Q</span>
             <dl class="question__question">問い合わせ先を教えてください。</dl>
             <!--answer -->
-            <dd class="question__answer">電話、LINE、お問い合わせフォームにてご質問承っております。<br>
+            <dd class="question__answer">電話、LINE、<a href="#contact" class="question__a">お問い合わせフォーム</a>にてご質問承っております。<br>
             ご不明点等ございましたらお気軽にお問い合わせください。</dd>
           </div>
 
@@ -450,8 +485,8 @@
         <ul class="footer-menu-wrap">
           <li class="footer-menu__list"><a href="./../index.html#concept" class="footer-menu__a footer-menu__a--hover">CONCEPT</a></li>
           <li class="footer-menu__list"><a href="#news" class="footer-menu__a footer-menu__a--hover">NEWS</a></li>
-          <li class="footer-menu__list"><a href="" class="footer-menu__a footer-menu__a-hover">MENU</a></li>
-          <li class="footer-menu__list"><a href="./../index.html#reviews" class="footer-menu__a footer-menu__a--footer">REVIEWS</a></li>
+          <li class="footer-menu__list"><a href="" class="footer-menu__a footer-menu__a--hover">MENU</a></li>
+          <li class="footer-menu__list"><a href="./../index.html#reviews" class="footer-menu__a footer-menu__a--hover">REVIEWS</a></li>
           <li class="footer-menu__list"><a href="#access" class="footer-menu__a footer-menu__a--hover">ACCESS</a></li>
           <li class="footer-menu__list"><a href="./html/faq.html" class="footer-menu__a footer-menu__a--hover">FAQ</a></li>
           <li class="footer-menu__list"><a href="#contact" class="footer-menu__a footer-menu__a--hover">CONTACT</a></li>
@@ -506,8 +541,8 @@
      </div>
       </div>
   </div>
-  <div id="scroll-up" class="scroll-up">
-    <a href="#policy" class="scroll-up__a scroll-up__a--hover">
+  <div id="scroll-up__faq" class="scroll-up">
+    <a href="#questions" class="scroll-up__a scroll-up__a--hover">
       <i class="fas fa-angle-double-up scroll-up__i"></i>
       <p class="scroll-up__text">TOP</p>
     </a>
@@ -527,8 +562,10 @@
   <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script> <!-- jQuery -->
-<script src="./../js/main.js"></script> <!-- JavaScript -->
+crossorigin="anonymous"></script> <!-- jQuery CDN -->
+<script src="./../js/main.js"></script> 
+<script src="./../js/faq.js"></script>
+<!-- JavaScript -->
 </body>
 </html>
 
