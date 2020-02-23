@@ -41,6 +41,10 @@
   font-size: 1.6em;
 }
 
+.questions__index-flex-contaienr {
+  justify-content: flex-start;
+}
+
 .questions__list:not(:last-child) {
   margin-right: 10px;
   margin-bottom: 20px;
@@ -78,7 +82,6 @@
 
 .question__q {
   width: 30px;
-  margin: 0 0 30px 20px;
   font-size: 3em;
   color: #8a4da5;
   display: inline-block;
@@ -92,8 +95,8 @@
 }
 
 .question__answer {
-  margin: 0 0 100px 20px;
-  padding: 0 0 10px 35px;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
   position: relative;
   line-height: 2em;
   font-size: 1.4em;
@@ -116,4 +119,103 @@
 
 .question__a {
   color: #8a4da5;
+}
+
+
+@media screen and (min-width: 960px) {
+
+  .questions-flex-container {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .questions__index-wrap {
+    width: 10%;
+    min-width: 180px;
+    flex-grow: 1;
+    margin-bottom: 50px;
+    font-size: 1.6em;
+  }
+  
+  .questions__index-flex-contaienr {
+    justify-content: flex-start;
+  }
+  
+  .questions__list:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .questions__index {
+    color: #8a4da5;
+  }
+  
+  .questions__content-wrap {
+    width: 81%;
+    min-width: 320px;
+    padding: 0 50px;
+  }
+  
+  .question__title {
+    margin: 0 0 2em 0;
+    position: relative;
+    color: #8a4da5;
+    font-size: 2.3em;
+    font-weight: normal;
+  }
+  
+  .question__title::before {
+    content: "";
+    height: 1em;
+    border-left: 20px solid #8a4da5;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+  }
+  
+  .question__q {
+    width: 30px;
+    margin: 0 0 30px 20px;
+    font-size: 3em;
+    color: #8a4da5;
+    display: inline-block;
+  }
+  
+  .question__question {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #8a4da5;
+    display: inline-block;
+  }
+  
+  .question__answer {
+    margin: 0 0 100px 20px;
+    padding: 0 0 10px 35px;
+    position: relative;
+    line-height: 2em;
+    font-size: 1.4em;
+    color: #8a4da5;
+    border-bottom: 1px solid #8a4da5;
+  }
+  
+  .question__answer::after {
+    content: "";
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    bottom: ;
+    font-size: 1.5em;
+    background: linear-gradient(45deg, transparent 49%, #8a4da5 49%, #8a4da5 51%, transparent 51%, transparent);
+    background: -webkit-linear-gradient(45deg, transparent 49%, #8a4da5 49%, #8a4da5 51%, transparent 51%, transparent);
+  }
+  
+  .question__a {
+    color: #8a4da5;
+  }
 }

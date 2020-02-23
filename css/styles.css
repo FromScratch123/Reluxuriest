@@ -25,6 +25,10 @@ a {
   color: #3C3C3C;
 }
 
+button {
+  cursor: pointer;
+}
+
 th, td {
   padding: 8px;
 }
@@ -188,7 +192,7 @@ select {
   background-repeat: no-repeat;
   background-size: auto 118%;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -208,6 +212,15 @@ select {
   animation: fade-in 3.5s ease;
 }
 
+
+/* middle and large screen */
+@media screen and (min-width: 560px) {
+  .hero__title--break {
+    display: none;
+  }
+
+}
+
 /* =========================
      hambarger menu
 ========================= */
@@ -221,7 +234,7 @@ select {
   top: 0;
   right: 0;
   background: transparent;
-  z-index: 3;
+  z-index: 4;
 }
 
 .hambarger:focus {
@@ -229,7 +242,7 @@ select {
 }
 
 .hambarger__bar {
-  width: 40px;
+  width: 35px;
   height: 4px;
   border-radius: 4px;
   background: #641388;
@@ -237,11 +250,11 @@ select {
 }
 
 .hambarger__bar:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .hambarger__bar1.js-drawer--show {
-  transform: translateY(14px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .hambarger__bar2.js-drawer--show {
@@ -251,7 +264,7 @@ select {
 }
 
 .hambarger__bar3.js-drawer--show {
-  transform: translateY(-14px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .drawer {
@@ -263,7 +276,9 @@ select {
   top: 0;
   right: -60%;
   transition: .3s ease-in-out;
+  z-index: 3;
 }
+
 
 .drawer.js-drawer--show {
   right: 0;
@@ -287,6 +302,12 @@ select {
   font-size: 1.8em;
 }
 
+.hambarger__list--hover:hover {
+  opacity: 0.7;
+  transition: .4s ease;
+}
+
+/* large screen */
 @media screen and (min-width: 960px) {
   .hambarger {
     display: none;
@@ -549,8 +570,9 @@ select {
   
   .global-nav__list {
     font-size: 1.8em;
+    position: relative;
   }
-  
+
   .global-nav__a:not(:last-child) {
     margin-right: 1.5em;
   }
@@ -561,13 +583,11 @@ select {
   
   .global-nav__list:hover {
     transform: translateY(-3px);
+    opacity: .7;
+    transition: 0.4s ease;
   }
   
-  /* middle screen */
-  @media screen and (min-width: 560px) {
-    
-  
-  }
+
 }
 
 
@@ -587,7 +607,6 @@ select {
 
 .content-wrap {
   width: 70%;
-  height: auto;
   min-width: 320px;
   height: auto;
   margin: 0 auto;
@@ -597,12 +616,12 @@ select {
 }
 
 .desc-box {
-  width: 40%;
   max-width: 500px;
   min-width: 320px;
-  position: relative;
-  top: 30px;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
@@ -638,7 +657,7 @@ select {
   height: auto;
   min-height: 450px;
   margin-left: auto;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   z-index: 0;
@@ -646,9 +665,33 @@ select {
 
 .concept__img {
   width: 100%;
+  height: 100%;
   min-height: 450px;
+  position: absolute;
+  left: 0px;
+  top: 50px;
 }
 
+/* large screen */
+@media screen and (min-width: 960px) {
+  
+  .desc-box {
+    width: 40%;
+    position: relative;
+    top: 30px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  
+  
+  .concept__img-wrap {
+    position: absolute;
+  }
+  
+  .concept__img {
+    position: static;
+  }
+}
 
 /* =========================
           NEWS
@@ -868,12 +911,12 @@ select {
 .access {
   background-image: url(../img/background/background__oval.png);
   background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-size: contain;
+  background-position: bottom right;
+  background-size: 120% 50%;
 }
 
 .access-flex-container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-around;
 }
@@ -884,13 +927,11 @@ select {
   min-width: 320px;
   height: 100%;
   min-height: 500px;
-  margin-bottom: 50px;
   position: relative;
   background-image: url(../img/background/background__map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* background: blue; */
 }
 
 .map-wrap {
@@ -908,6 +949,7 @@ select {
 .info {
   width: 30%;
   min-width: 320px;
+  margin-bottom: 20px;
   padding: 40px;
   position: relative;
 }
@@ -990,6 +1032,19 @@ select {
   color: #00b900;
 }
 
+
+/* middle and large screen */
+@media screen and (min-width: 560px) {
+
+  .access {
+    background-position: 100% 100%;
+    background-size: contain;
+  }
+  
+  
+}
+
+
 /* =========================
           CONTACT
 ========================= */
@@ -1002,8 +1057,8 @@ select {
 }
 
 .contact-form {
-  width: 60%;
-  min-width: 320px;
+  width: 80%;
+  min-width: 280px;
   height: auto;
   margin: 0 auto 50px;
   padding: 50px 30px;
@@ -1104,7 +1159,7 @@ select {
 
 
 .footer-box {
-  padding: 30px;
+  padding: 30px 30px 0px;
   text-align: center;
   color: #8A4DA5;
   font-size: 1.4em;
@@ -1254,7 +1309,7 @@ select {
 .footer-box__p--large {
   margin: 0;
   line-height: 1.2em;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .footer-box__business-hour {
@@ -1288,11 +1343,19 @@ select {
 }
 
 .footer-copyright-wrap {
+  margin-top: 30px;
   padding-top: 30px;
   background-image: url(../img/background/background__oval-footer.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+/* large screen */
+@media screen and (min-width: 960px) {
+  .footer-box__p--large {
+    font-size: 2.5rem;
+  }
 }
 
 

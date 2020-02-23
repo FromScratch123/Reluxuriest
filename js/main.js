@@ -7,13 +7,33 @@ $(function() {
      $('.hambarger__bar1').toggleClass('js-drawer--show');
      $('.hambarger__bar2').toggleClass('js-drawer--show');
      $('.hambarger__bar3').toggleClass('js-drawer--show');
+
+     $('.hambarger__a').click(function () {
+        $('.drawer').removeClass('js-drawer--show');
+        $('.hambarger__bar1').removeClass('js-drawer--show');
+        $('.hambarger__bar2').removeClass('js-drawer--show');
+        $('.hambarger__bar3').removeClass('js-drawer--show');
+     });
   });
+
+  
+
+  //hambarger-menuの移動
+  let globalNavAreaOffset = $('.global-nav-area').offset();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= globalNavAreaOffset.top) {
+        $('.hambarger').css({ 'position':'fixed'});
+        $('.drawer').css({ 'position':'fixed'});
+    } else {
+        $('.hambarger').css({'position':'absolute'});
+        $('drawer').css({'position':'absolute'});
+    }
+});
 
 
   //global-navの位置固定
   let globalNavOffset = $('#global-nav').offset();
   $(window).scroll(function () {
-
       if ($(this).scrollTop() > globalNavOffset.top) {
           $('#global-nav').addClass('global-nav-header--fixed');
       } else {
