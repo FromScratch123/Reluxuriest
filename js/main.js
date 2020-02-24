@@ -2,18 +2,26 @@ $(function() {
 
   //hambarger-menuの表示切替
   let hambarger = $('#hambarger');
-  hambarger.click(function (){
+  hambarger.click(function (e){
      $('.drawer').toggleClass('js-drawer--show');
      $('.hambarger__bar1').toggleClass('js-drawer--show');
      $('.hambarger__bar2').toggleClass('js-drawer--show');
      $('.hambarger__bar3').toggleClass('js-drawer--show');
-
+    e.stopPropagation(); //clickイベント中断
      $('.hambarger__a').click(function () {
         $('.drawer').removeClass('js-drawer--show');
         $('.hambarger__bar1').removeClass('js-drawer--show');
         $('.hambarger__bar2').removeClass('js-drawer--show');
         $('.hambarger__bar3').removeClass('js-drawer--show');
      });
+
+     $(window).click(function () {
+        $('.drawer').removeClass('js-drawer--show');
+        $('.hambarger__bar1').removeClass('js-drawer--show');
+        $('.hambarger__bar2').removeClass('js-drawer--show');
+        $('.hambarger__bar3').removeClass('js-drawer--show');
+     });
+     
   });
 
   
@@ -39,6 +47,24 @@ $(function() {
       } else {
           $('#global-nav').removeClass('global-nav-header--fixed');
       }
+  });
+
+  //rsv-buttonの消去
+  
+  $(window).scroll(function () {
+    let footerOffset = $('#footer').offset();
+    let rsvButton = $('#rsv-button--fixed');
+    let rsvButtonTel = $('.rsv-by-phone__square-button');
+    let rsvButtonLine = $('.rsv-by-line__square-button');
+    let rsvButtonOffset = $
+    ('#rsv-button--fixed').offset();
+     if(rsvButtonOffset.top + rsvButton.height() > footerOffset.top) {
+        rsvButtonTel.hide("drop", {direction:"right"}, 1000);
+        rsvButtonLine.hide('drop', {direction:"right"}, 1000);
+     } else {
+        rsvButtonTel.show("drop", {direction:"left"}, 1000);
+        rsvButtonLine.show("drop", {direction:"left"}, 1000);
+     }
   });
 
   //sns-buttonの位置固定
@@ -71,7 +97,9 @@ $(function() {
     //リロード時の各セクション表示処理
     $('section').each(function () {
         
-        if($(window).scrollTop() >= $(this).offset().top) {
+        if($(window).scrollTop() >= $(this).offset().top - 50
+        //  js-showupのtranslateY(50)分を調整
+        ) {
             $(this).removeClass('js-hidden');
         }
     });

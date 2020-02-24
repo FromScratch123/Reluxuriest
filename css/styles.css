@@ -998,12 +998,11 @@ select {
 
 .business-time-table {
   margin: 20px 0;
-  padding: 10px;
   text-align: center;
   color: #ffffff;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .business-time-table__business-hour {
@@ -1041,6 +1040,15 @@ select {
     background-size: contain;
   }
   
+  .business-time-table {
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 1.6em;
+  }
   
 }
 
